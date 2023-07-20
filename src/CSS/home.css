@@ -83,19 +83,155 @@
   .cibil-credit-info>p{
     border: 2px solid red;
     text-align: center;
-    margin: 2% 0%;
+    margin: 3% 0%;
   }
 
   .cibil-credit-info>button{
     border: 2px solid orangered;
     margin: auto;
+    margin-bottom: 3%;
     display: block;
-    padding: 5px 20px;
+    padding: 9px 24px;
     border-radius: 22px;
     background-color: rgb(246, 215, 39);
     font-weight: bold;
     
   }
+
+  .help-center{
+    background-color: rgb(246, 246, 244);
+    text-align: center;
+    border: 2px solid;
+  }
+
+  .help-heading>h2{
+    font-size: xx-large;
+    font-weight: bold;
+    margin-top: 2%;
+    
+  }
+
+  .help-heading>p{
+    font-size: larger;
+    margin: 1%;
+  }
+
+  .help-card{
+    border: 3px solid orangered;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    gap: 5%;
+  }
+  
+  .card{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 3%;
+    padding: 2%;
+    
+  }
+  .card>img{
+    display: block;
+    margin: auto;
+    margin-bottom: 5%;
+
+  }
+
+  .card>h3{
+    font-size: larger;
+    font-weight: 500;
+  }
+
+  .card>p{
+    font-size: large;
+    margin: 4%;
+  }
+
+  .card>h2{
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 60%;
+    margin-bottom:0%;
+    color: rgb(6, 84, 87);
+
+  }
+  .card>h2:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    
+  }
+  .card:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+
+  .help-center>p{
+    font-size: larger;
+    margin: 3%;
+  }
+
+  .monitor{
+    border: 3px solid blue;
+    display: flex;
+    width: 80%;
+    margin: 4% auto;
+    background-color: rgb(246, 246, 244);
+    padding: 5% 2% 7% 2%;
+    justify-content: space-between;
+  }
+
+  .monitor-img{
+    border: 2px solid orangered;
+    width: 30%;
+  }
+
+  .monitor-text{
+    border: 2px solid green;
+    width: 65%;
+  }
+
+  .monitor-text>h2{
+    font-size: xx-large;
+    font-weight: bold;
+  }
+
+  .monitor-text>p{
+    font-size: larger;
+    margin: 2% 0% ;
+  
+  }
+  .monitor-text>h3{
+    font-size: larger;
+    margin: 2% 0% ;
+  }
+  .monitor-text>button{
+    border: 2px solid;
+    background-color: rgb(249, 214, 12);
+    border-radius: 22px;
+    font-weight: bold;
+    padding: 9px 24px;
+    margin: 2% 0%;
+  }
+
+  .app{
+    padding: 5% 0%;
+    background-color: rgb(246, 246, 244);
+
+  }
+  .app-link{
+    border: 3px solid red;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+  }
+
+  .app-link>h2{
+    font-size: larger;
+    font-weight: bold;
+  }
+
+
 
   /* media query */
 
@@ -106,5 +242,59 @@
     }
     .slider-content{
       width: 100%;
+    }
+    .slider h1{
+      width: 80%;
+    }
+    .text-line>p{
+      font-size: x-large;
+    }
+    .about-credits{
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+    }
+    .help-card{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    .card{
+      width: 70%;
+      margin: 2%;
+    }
+    .help-center>p{
+      margin: 3% 7%;
+    }
+    .monitor{
+      display: flex;
+      flex-direction: column;
+    }
+    .monitor-img{
+      width: 89%;
+      margin: auto;
+      margin-bottom: 5%;
+    }
+    .monitor-text{
+      margin: auto;
+      width: 90%;
+    }
+    .monitor-text>h2{
+    font-size: x-large;
+    }
+    .monitor-text>button{
+      display: block;
+      margin: 9% auto;
+    }
+    .app-link{
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+    }
+    .app-link>img{
+      display: block;
+      margin: 5% auto;
+      width: 40%;
     }
   }
