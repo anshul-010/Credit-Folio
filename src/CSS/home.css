@@ -1,18 +1,18 @@
+
 .slider{
     display: flex;
-    border: 1px solid ;
     background-color: rgb(246, 246, 244);
-    border: 5px solid yellow;
+    /* border: 5px solid yellow; */
   }
   .slider-content{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 55%;
   }
   .lapi-img>.lapi-img{
     width: 100%;
   }
   .slider h1{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     margin: 4% 10% ;
     font-size: x-large;
     font-weight: bold;
@@ -21,7 +21,7 @@
   }
   
   .slider button{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin: 0% 10% 2% 10%;
     padding: 10px;
     border-radius: 22px;
@@ -36,7 +36,7 @@
   }
   
   .text-line{
-    border: 2px solid;
+    /* border: 2px solid; */
     text-align: center;
     padding: 20px;
   }
@@ -45,12 +45,12 @@
   }
 
   .cibil-credit-info{
-    border: 3px dotted red;
+    /* border: 3px dotted red; */
     margin-top: 3%;
   }
 
   .about-credits{
-    border: 3px solid green;
+    /* border: 3px solid green; */
     width: 75%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -59,7 +59,7 @@
   }
 
   .credit-text{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     margin: 4% 1%;
     /* line-height: 200%; */
   }
@@ -81,13 +81,13 @@
   }
 
   .cibil-credit-info>p{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     text-align: center;
     margin: 3% 0%;
   }
 
   .cibil-credit-info>button{
-    border: 2px solid orangered;
+    /* border: 2px solid orangered; */
     margin: auto;
     margin-bottom: 3%;
     display: block;
@@ -101,7 +101,7 @@
   .help-center{
     background-color: rgb(246, 246, 244);
     text-align: center;
-    border: 2px solid;
+    /* border: 2px solid; */
   }
 
   .help-heading>h2{
@@ -117,7 +117,7 @@
   }
 
   .help-card{
-    border: 3px solid orangered;
+    /* border: 3px solid orangered; */
     display: flex;
     width: 80%;
     margin: auto;
@@ -171,7 +171,7 @@
   }
 
   .monitor{
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     display: flex;
     width: 80%;
     margin: 4% auto;
@@ -181,12 +181,12 @@
   }
 
   .monitor-img{
-    border: 2px solid orangered;
+    /* border: 2px solid orangered; */
     width: 30%;
   }
 
   .monitor-text{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width: 65%;
   }
 
@@ -205,7 +205,7 @@
     margin: 2% 0% ;
   }
   .monitor-text>button{
-    border: 2px solid;
+    /* border: 2px solid; */
     background-color: rgb(249, 214, 12);
     border-radius: 22px;
     font-weight: bold;
@@ -219,7 +219,7 @@
 
   }
   .app-link{
-    border: 3px solid red;
+    /* border: 3px solid red; */
     display: flex;
     justify-content: space-around;
     width: 70%;
@@ -227,9 +227,35 @@
   }
 
   .app-link>h2{
-    font-size: larger;
+    font-size: x-large;
     font-weight: bold;
   }
+  .pic{
+    width: 100%;
+  }
+  .pic>img{
+    width: 100%;
+  }
+
+  .bottom-text{
+    /* border: 3px solid brown; */
+    text-align: center;
+    padding: 1%;
+  }
+
+  .bottom-text>h2{
+    font-size: x-large;
+    font-weight: 500;
+  }
+  .bottom-text>button{
+    /* border: 2px solid; */
+    background-color: rgb(249, 214, 12);
+    border-radius: 22px;
+    font-weight: bold;
+    padding: 9px 24px;
+    margin: 2% 0%;
+  }
+
 
 
 
