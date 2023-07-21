@@ -30,14 +30,13 @@ const [SignUpStatus, setSignUpStatus] = useState(false);
         console.log('Sign up successful:', response.data);
       })
       .catch((error) => {
-       
         console.error('Sign up failed:', error);
       });
   };
 
   return (
     <DIV>
-      {SignUpStatus ? <h3>Successfully SignUp</h3> : <h2>SignUp Page</h2> }
+      {SignUpStatus ? <h3> SignUp Successful</h3> : <h2>SignUp Page</h2> }
       <form onSubmit={handleSubmit}>
         <div className='boxx'>
           {/* <label>Name:</label> */}
