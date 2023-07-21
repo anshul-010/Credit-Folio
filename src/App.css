@@ -2,12 +2,25 @@
 .active{
     background: #F6D727
 }
+p{
+    color: #333 !important;
+}
 
 a{
     color: #333;
 }
+.icon{
+  display: block;
+  margin: auto;
+  width: 30px;
+  margin-bottom: 10px;
+  /* filter: invert(); */
+}
 
 .nav-link{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     padding: 8px 10px;
 }
