@@ -6,13 +6,14 @@ import approve from "../images/svgLogos/approve.svg"
 import monitor_img from "../images/rankmsme.jpeg"
 import playstore from "../images/apps/playstore.png"
 import appstore from "../images/apps/appstore.png"
+import picture from "../images/report-bg.jpeg"
 import "../CSS/home.css"
 import { Heading } from '@chakra-ui/react'
+import { Footer } from './Footer'
 
 export const Home = () => {
   return (
     <div>
-        <hr style={{backgroundColor:'yellow',height:"5px"}} />
         <div className='slider'>
             <div className='slider-content' >
                 <h1>Banks Check Your CIBIL Score Before Approving Your Loan*</h1>
@@ -98,6 +99,15 @@ export const Home = () => {
                 <img src={appstore} alt="not found" />
             </div>
         </div>
+        <div className="pic">
+            <img src={picture} alt="not found" />
+        </div>
+        <div className='bottom-text'>
+            <h2>Get your CIBIL Score & Report today.</h2>
+            <button>GET STARTED NOW</button>
+        </div>
+        <hr style={{backgroundColor:'yellow',height:"4px"}} />
+        <Footer/>
     </div>
   )
 }
