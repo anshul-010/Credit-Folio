@@ -1,0 +1,54 @@
+*{
+    scroll-behavior: auto;
+    
+}
+.navbar{
+    /* border: 2px solid ; */
+    /* background-color: gainsboro; */
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+}
+
+.logo{
+    border-right: 1px solid gray;
+    width: 10%;
+    font-size: xx-large;
+    color: rgb(246, 215, 39);
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.btn{
+    /* border: 2px solid green; */
+    width: 7%;
+    text-align: center;
+    align-self: center;
+    padding: 1%;
+    background-color: rgb(246, 215, 39);
+}
+.login-btn{
+    font-size: larger;
+    font-weight: bolder;
+}
+.pages{
+    /* border: 2px solid green; */
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.pages p{
+    font-size: larger;
+    font-weight: 500;
+    color: rgb(6, 84, 87);
+}
+.pages p:hover{
+    cursor: pointer;
+    text-decoration: underline solid rgb(6, 84, 87);
+    
+}
