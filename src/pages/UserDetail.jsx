@@ -1,13 +1,11 @@
 
 import React from 'react'
-import Navbar from '../components/UserDetails/Navbar'
 import CibilScore from '../components/UserDetails/CibilScore'
 import Offers from '../components/UserDetails/Offers'
 
 const UserDetail = () => {
   return (
     <div>
-        <Navbar/>
         <CibilScore/>
         <Offers/>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati facilis quisquam nihil sed labore voluptates sapiente fugiat blanditiis repudiandae vero?</p>

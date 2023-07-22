@@ -12,8 +12,8 @@ import { Link } from "react-router-dom";
 const CibilScore = () => {
   return (
     <div>
-      <Box p='1rem' m='2rem auto' w='fit-content'>
-        <HStack border='solid 3px #FF7224' p='1.5rem'>
+      <Box p='1rem' m='2rem auto' maxW='930px' minW='300px'>
+        <HStack border='solid 3px #FF7224' p='1.5rem' justifyContent='space-between' flexWrap='wrap'>
           <Box>
             <Text as='p' fontWeight='bold'>
               You are eligible for unlimited CIBIL Score and reports
@@ -37,8 +37,10 @@ const CibilScore = () => {
         m='1rem auto'
         boxShadow='0px 0px 2px #ccc'
         alignItems='flex-start'
+        justifyContent='space-between'
+        // flexWrap='wrap'
       >
-        <Box borderRight={"solid 2px #ccc"} p={"1rem"}>
+        <Box  borderRight={"solid 2px #ccc"} p={"1rem"} pr='2.4rem'>
           <Text m='10px' as='h2' fontSize='20px'>CIBIL Score</Text>
           <CircularProgress color='#B9CD5D' m='5px' value={77.4} size='150px'>
             <CircularProgressLabel color='#B9CD5D'>774</CircularProgressLabel>
@@ -59,13 +61,13 @@ const CibilScore = () => {
           </Box>
         </Box>
 
-        <Box p='10px' display='flex' flexDirection={"column"} gap={"20px"}>
+        <Box p='10px' w='450px' display='flex' flexDirection={"column"} gap={"20px"}>
           <Text as='h2'>Where You Stand</Text>
           <Text fontSize='14px' as='p'>
             See how your CIBIL Score compares with the rest of the
             self-monitoring consumers.
           </Text>
-          <Button p={"10px 20px"} color='#fff' bg={"#FF7224"}>
+          <Button p={"10px 20px"} w='fit-content' color='#fff' bg={"#FF7224"}>
             KNOW MORE
           </Button>
         </Box>
