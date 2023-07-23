@@ -1,7 +1,10 @@
 import React from 'react'
+import { About } from './About'
 
 export const HelpCenter = () => {
   return (
-    <div>HelpCenter</div>
+    <div>
+      <About/>
+    </div>
   )
 }

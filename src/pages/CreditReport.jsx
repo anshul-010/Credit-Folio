@@ -1,7 +1,10 @@
 import React from 'react'
+import { About } from './About'
 
 export const CreditReport = () => {
   return (
-    <div>CreditReport</div>
+    <div>
+      <About/>
+    </div>
   )
 }
