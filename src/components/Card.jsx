@@ -1,10 +1,30 @@
-
-
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,
+  Button,
+  Box,
+  FormControl,
+  FormLabel,
+  FormErrorMessage,
+  FormHelperText,
+  Input,
+  Select,
+  useTabPanel,
+} from "@chakra-ui/react";
 
 const Card = (props) => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   const isAdmin = useSelector((state) => state.authReducer.isAdmin);
   console.log("isAdmin", isAdmin);
   const navigate = useNavigate();
@@ -38,7 +58,35 @@ const Card = (props) => {
     border: "1px solid #ccc",
     boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
   };
- 
+
+  function patchRequest(data, id) {
+    axios.patch(
+      `https://mock-api-credit-card.onrender.com/creditCardAccountsDetails/${id}`,
+      data
+    );
+  }
+
+  const [Data, setData] = useState();
+
+  function handleChange(e) {
+    const { name, value } = e.target;
+    setData((prev) => {
+      return {
+        ...prev,
+        [name]:
+          name === "lastPaymentDate"
+            ? value
+            : name === "accountStatus"
+            ? value
+            : +value,
+      };
+    });
+  }
+
+  function handleSubmit(e) {
+    console.log(Data);
+  }
+
   return (
     <div style={divStyle}>
       <img src={props.img} style={imgStyle} alt={props.productName} />
@@ -81,16 +129,102 @@ const Card = (props) => {
             padding: "5px 30px",
             color: "#fff",
           }}
-          // onClick={}
+          onClick={onOpen}
         >
           Edit
         </button>
       )}
+      <Modal isOpen={isOpen} onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent>
+          {/* <ModalHeader>Modal Title</ModalHeader> */}
+          <ModalCloseButton />
+          <ModalBody>
+            <div
+              style={{
+                width: "100%",
+                padding: "5px",
+                margin: "0 auto",
+              }}
+            >
+              <div
+                style={{
+                  borderRadius: "6px",
+                  width: "100%",
+                  padding: '10px',
+                  margin: "auto",
+                }}
+              >
+                <FormControl p='10px'>
+                  <FormLabel fontSize='14px' mt='5px' color='#444'>Credit Limit</FormLabel>
+                  <Input
+                  border='1px solid #ccc'
+                    type='number'
+                    name='creditLimit'
+                    onChange={handleChange}
+                    w='300px'
+                    placeholder={"creditLimit"}
+                    value={props.creditLimit}
+                  />
+                  <FormLabel fontSize='14px' mt='5px' color='#444'>Last Payment Amount</FormLabel>
+                  <Input
+                  border='1px solid #ccc'
+                    type='number'
+                    name='lastPaymentAmount'
+                    onChange={handleChange}
+                    w='300px'
+                    placeholder={"lastPaymentAmount"}
+                    value={props.lastPaymentAmount}
+                  />
+                  <FormLabel fontSize='14px' mt='5px' color='#444'>Last Payment Date</FormLabel>
+                  <Input
+                  border='1px solid #ccc'
+                    type='date'
+                    name='lastPaymentDate'
+                    onChange={handleChange}
+                    w='300px'
+                    placeholder={"lastPaymentDate"}
+                    value={props.lastPaymentDate}
+                  />
+                  <FormLabel fontSize='14px' mt='5px' color='#444'>Payment Due Amount</FormLabel>
+                  <Input
+                   border='1px solid #ccc'
+                    type='number'
+                    name='paymentDueAmount'
+                    onChange={handleChange}
+                    w='300px'
+                    placeholder={"paymentDueAmount"}
+                    value={props.paymentDueAmount}
+                  />
+                  <FormLabel fontSize='14px' mt='5px' color='#444'>Account Status</FormLabel>
+                  <Select
+                    value={props.accountStatus}
+                    name='accountStatus'
+                    onChange={handleChange}
+                    w='300px'
+                  >
+                    <option value='ACTIVE'>ACTIVE</option>
+                    <option value='DORMANT'>DORMANT</option>
+                  </Select>
+                  <FormLabel fontSize='14px' mt='5px' color='#444'>Cash Advance Limit</FormLabel>
+                  <Input
+                    border='1px solid #ccc'
+                    type='number'
+                    name='cashAdvanceLimit'
+                    onChange={handleChange}
+                    w='300px'
+                    placeholder={"cashAdvanceLimit"}
+                    value={props.cashAdvanceLimit}
+                  />
+            <Button mt='20px' colorScheme='blue'>Update</Button>
+                </FormControl>
+              </div>
+            </div>
+          </ModalBody>
+        </ModalContent>
+      </Modal>
     </div>
   );
 };
 
 export default Card;
-
-
-

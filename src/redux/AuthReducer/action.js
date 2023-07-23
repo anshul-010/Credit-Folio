@@ -34,9 +34,10 @@ dispatch(loginrequest())
    const users = response.data;
   
    const matchedUser = users.find((user) => user.email === email && user.password === password);
-  //  console.log(matchedUser);
-   
+
    if(matchedUser){
+    localStorage.setItem("LoginUserLS", JSON.stringify(matchedUser));
+
     if (matchedUser.name==="admin") {
       dispatch(loginAdminsuccess(matchedUser))
     }else{
@@ -54,7 +55,10 @@ dispatch(loginrequest())
  }
 };
 
+
+
 export const logout=()=>(dispatch)=>{
+  localStorage.clear();
   dispatch(userLogout())
 }
 

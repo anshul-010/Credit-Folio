@@ -11,6 +11,7 @@ import { Blog } from "./Blog";
 import { CreditReport } from "./CreditReport";
 import { Education } from "./Education";
 import { HelpCenter } from "./HelpCenter";
+import Private from './Private'
 // import  from './'
 import Admin from "./Admin";
 
@@ -19,7 +20,7 @@ const AllRoutes = () => {
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/admin' element={<Admin />} />
-      <Route path='/home' element={<><UserDetail /> </> } />
+      <Route path='/home' element={<Private><UserDetail /> </Private> } />
       <Route path='/login' element={<Login />} />
       <Route path='/sign-up' element={<SignUp />} />
       <Route path='/about' element={<About />} />
@@ -28,10 +29,10 @@ const AllRoutes = () => {
       <Route path='/education' element={<Education />} />
       <Route path='helpcenter' element={<HelpCenter />} />
       {/* ----------------------------------------------------- */}
-      <Route path='/credit-report/' element={<><ReportPage /></> } />
-      <Route path='/credit-report/:tab' element={<><ReportPage /> </>} />
-      <Route path='/admin' element={<><Admin /> </>} />
-      <Route path='/admin/:tab' element={<><Admin /> </>} />
+      <Route path='/credit-report/' element={<Private><ReportPage /></Private> } />
+      <Route path='/credit-report/:tab' element={<Private><ReportPage /> </Private>} />
+      <Route path='/admin' element={<Private><Admin /></Private>} />
+      <Route path='/admin/:tab' element={<Private><Admin /></Private>} />
       <Route path='/offers' element={<UserDetail />} />
       <Route path='/alerts' element={<UserDetail />} />
       <Route path='/score-simulator' element={<UserDetail />} />

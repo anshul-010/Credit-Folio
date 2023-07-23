@@ -12,7 +12,7 @@ const [SignUpStatus, setSignUpStatus] = useState(false);
     PAN:`SJDHI7654H`,
     email: 'Bob@example.com',
     password: 'bob',
-    mobile:'11111111'
+    mobile:'9821234589'
   });
 
   const handleChange = (event) => {
@@ -46,7 +46,7 @@ const [SignUpStatus, setSignUpStatus] = useState(false);
         </div>
         <div>
           {/* <label>PAN-Card:</label> */}
-          <input type="text" name="name" placeholder='PAN' value={formData.PAN} onChange={handleChange} required />
+          <input maxLength='10' type="text" name="PAN" placeholder='PAN' value={formData.PAN} onChange={handleChange} required />
         </div>
         <div>
           {/* <label>Email:</label> */}
@@ -54,7 +54,7 @@ const [SignUpStatus, setSignUpStatus] = useState(false);
         </div>
         <div>
           {/* <label>mobile:</label> */}
-          <input type="number" name="mobile" placeholder='mobile' value={formData.mobile} onChange={handleChange} required />
+          <input maxLength='10'  type="number" name="mobile" placeholder='mobile' value={formData.mobile} onChange={handleChange} required />
         </div>
         <div>
           {/* <label>Password:</label> */}
