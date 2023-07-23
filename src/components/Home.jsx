@@ -15,7 +15,6 @@ import {Topbar} from './Topbar'
 export const Home = () => {
   return (
     <div>
-        {/* <Topbar/> */}
         <div className='slider'>
             <div className='slider-content' >
                 <h1>Banks Check Your CIBIL Score Before Approving Your Loan*</h1>

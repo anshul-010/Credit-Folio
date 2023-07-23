@@ -1,4 +1,3 @@
-import { Navbar } from './AllRoutes/Navbar';
 import './App.css';
 import { PatchCreditCard } from './EditData/PatchCreditCard';
 import { ContactInfo } from './components/ContactInfo';
@@ -8,15 +7,21 @@ import { Home } from './components/Home';
 import { Personalinfo } from './components/Personalinfo';
 import { Topbar } from './components/Topbar';
 import { About } from './pages/About';
+import AllRoutes from './pages/AllRoutes';
+import  Navbar  from './components/UserDetails/Navbar';
+import { useSelector } from 'react-redux';
 
 function App() {
+  const  isAuth = useSelector(state=>state.authReducer).isAuth
+  console.log('Auth',isAuth)
   return( 
   <>
     <div >
-      {/* <Topbar/>
-      <Navbar/> */}
+       {/* <Topbar/> */}
+     {isAuth ? <Navbar/> : <Topbar/>}
+      <AllRoutes/>
       {/* <About/> */}
-      <PatchCreditCard/>
+      {/* <PatchCreditCard/> */}
       {/* <Personalinfo/> */}
       {/* <ContactInfo/> */}
       {/* <EmployeInfo/> */}

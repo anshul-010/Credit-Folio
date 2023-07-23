@@ -14,7 +14,7 @@ import {
 
 export const EmployeInfo = () => {
   return (
-    <div style={{border:"1px solid", padding:"2%",width:"60%"}} >
+    <div style={{border:"1px solid", padding:"2%",width:"100%"}} >
         <div className='top'>
             <div className='top-left'>
                 Control Number: 5,980,650,023 
