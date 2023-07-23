@@ -23,6 +23,10 @@ const Login = () => {
 
   const handleLogin = () => {
     dispatch(login(email, password)).then(() => {
+      if(email == 'admin@gmail.com'){
+        navigate('/admin', { replace: true });
+        return
+      }
       navigate('/home', { replace: true });
     });
   };
@@ -31,7 +35,7 @@ const Login = () => {
     <DIV>
       {isAuth ? <h3>Successfully Logged In</h3> : <h2>Login Page</h2>}
 
-      {isAuth && <h3> User: {user.name}</h3>}
+      {isAuth &&  <h3> User: {user.name}</h3>}
       <input
         type='email'
         placeholder='Email'

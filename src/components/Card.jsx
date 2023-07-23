@@ -1,7 +1,15 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import { styled } from 'styled-components'
 
 const Card = (props) => {
+  const isAdmin = useSelector(state =>state.authReducer.isAdmin)
+  console.log('isAdmin',isAdmin)
+  const navigate = useNavigate();
+  const editHandler = ()=>{
+    navigate('/admin/edit/:id')
+  }
   return (
     
         <DIV >
@@ -15,6 +23,7 @@ const Card = (props) => {
 
      {/* CREDIT CARD SPECIFIC */}
      {props.cashAdvanceLimit && <p>Cash Advance Limit : <span> ₹{props.cashAdvanceLimit} </span></p>}
+     {isAdmin && <button style={{background: '#23AAF2', borderRadius: '6px' , width: 'fit-content', margin: '8px auto', padding: '5px 30px', color:'#fff' }} onClick={editHandler} >Edit</button> }
 
               </DIV> 
     

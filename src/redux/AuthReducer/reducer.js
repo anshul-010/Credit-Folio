@@ -1,7 +1,7 @@
 import { LOGIN_FAILURE, LOGIN_REQUEST, LOGIN_USER_SUCCESS,LOGIN_ADMIN_SUCCESS, LOGOUT } from "../actionTypes"
 
 
-const initialState ={
+const  initialState ={
     isLoading: false,
     isError: false,
     isAuth: false,

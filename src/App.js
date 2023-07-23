@@ -8,17 +8,20 @@ import { Personalinfo } from './components/Personalinfo';
 import { Topbar } from './components/Topbar';
 import { About } from './pages/About';
 import AllRoutes from './pages/AllRoutes';
+import {useLocation, useParams } from 'react-router-dom';
 import  Navbar  from './components/UserDetails/Navbar';
 import { useSelector } from 'react-redux';
 
 function App() {
   const  isAuth = useSelector(state=>state.authReducer).isAuth
   console.log('Auth',isAuth)
+  let path = useLocation().pathname.replace('/','')
+  console.log('!path.includes && isAuth', !path.includes('admin') && isAuth)
   return( 
   <>
     <div >
-       {/* <Topbar/> */}
-     {isAuth ? <Navbar/> : <Topbar/>}
+     {!path.includes('admin') && isAuth && <Navbar/>}
+     {!path.includes('admin') && !isAuth &&  <Topbar/>}
       <AllRoutes/>
       {/* <About/> */}
       {/* <PatchCreditCard/> */}

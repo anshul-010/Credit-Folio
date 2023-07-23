@@ -5,7 +5,7 @@ import {reducer as authReducer}  from "./AuthReducer/reducer"
 import thunk from "redux-thunk";
 
 
-const rootReducer =combineReducers({
+const rootReducer = combineReducers({
     authReducer,
     // productReducer
 })
