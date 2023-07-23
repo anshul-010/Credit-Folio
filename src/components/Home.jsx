@@ -11,6 +11,7 @@ import "../CSS/home.css"
 import { Heading } from '@chakra-ui/react'
 import { Footer } from './Footer'
 import {Topbar} from './Topbar'
+import { Link } from 'react-router-dom'
  
 export const Home = () => {
   return (
@@ -18,7 +19,7 @@ export const Home = () => {
         <div className='slider'>
             <div className='slider-content' >
                 <h1>Banks Check Your CIBIL Score Before Approving Your Loan*</h1>
-                <button>GET FREE CIBIL SCORE & REPORT</button>
+                <Link to='/login'><button>GET FREE CIBIL SCORE & REPORT</button></Link>
                 <p>Already have a CIBIL account?<a href="#">Log In</a></p>
                 <p>Don't worry. Checking your own credit score won't lower it.</p>
             </div>
@@ -53,7 +54,7 @@ export const Home = () => {
                 </div>
             </div>
             <Heading fontSize='20px' as='p'  size='md' >Everything you need to stay loan-ready, always.</Heading>
-            <button>GET YOUR CIBIL SCORE</button>
+            <button><Link to='/login'>GET YOUR CIBIL SCORE</Link></button>
         </div>
         <div className='help-center'>
             <div className='help-heading' >
@@ -90,7 +91,7 @@ export const Home = () => {
                 <h2>Monitor Your Company's Credit Health with CIBIL Rank.</h2>
                 <p>Easy access - check your report online anytime, anywhere.</p>
                 <h3>70% of all companies who were sanctioned loans had a CIBIL RANK between 4 and 1.</h3>
-                <button>GET STARTED</button>
+                <button><Link to='/login'>GET STARTED</Link></button>
             </div>
         </div>
         <div className='app'>

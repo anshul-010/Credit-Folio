@@ -60,13 +60,10 @@ const Card = (props) => {
   };
 
   function patchRequest(data, id) {
-    axios.patch(
-      `https://mock-api-credit-card.onrender.com/creditCardAccountsDetails/${id}`,
-      data
-    );
+    axios.patch( `https://mock-api-credit-card.onrender.com/creditCardAccountsDetails/${id}`,data);
   }
 
-  const [Data, setData] = useState();
+  const [Data, setData] = useState(props);
 
   function handleChange(e) {
     const { name, value } = e.target;
@@ -82,9 +79,9 @@ const Card = (props) => {
       };
     });
   }
-
+let id = props.id
   function handleSubmit(e) {
-    console.log(Data);
+    patchRequest(Data,id)
   }
 
   return (
@@ -164,7 +161,7 @@ const Card = (props) => {
                     onChange={handleChange}
                     w='300px'
                     placeholder={"creditLimit"}
-                    value={props.creditLimit}
+                    value={Data.creditLimit}
                   />
                   <FormLabel fontSize='14px' mt='5px' color='#444'>Last Payment Amount</FormLabel>
                   <Input
@@ -174,7 +171,7 @@ const Card = (props) => {
                     onChange={handleChange}
                     w='300px'
                     placeholder={"lastPaymentAmount"}
-                    value={props.lastPaymentAmount}
+                    value={Data.lastPaymentAmount}
                   />
                   <FormLabel fontSize='14px' mt='5px' color='#444'>Last Payment Date</FormLabel>
                   <Input
@@ -184,7 +181,7 @@ const Card = (props) => {
                     onChange={handleChange}
                     w='300px'
                     placeholder={"lastPaymentDate"}
-                    value={props.lastPaymentDate}
+                    value={Data.lastPaymentDate}
                   />
                   <FormLabel fontSize='14px' mt='5px' color='#444'>Payment Due Amount</FormLabel>
                   <Input
@@ -194,11 +191,11 @@ const Card = (props) => {
                     onChange={handleChange}
                     w='300px'
                     placeholder={"paymentDueAmount"}
-                    value={props.paymentDueAmount}
+                    value={Data.paymentDueAmount}
                   />
                   <FormLabel fontSize='14px' mt='5px' color='#444'>Account Status</FormLabel>
                   <Select
-                    value={props.accountStatus}
+                    value={Data.accountStatus}
                     name='accountStatus'
                     onChange={handleChange}
                     w='300px'
@@ -214,9 +211,9 @@ const Card = (props) => {
                     onChange={handleChange}
                     w='300px'
                     placeholder={"cashAdvanceLimit"}
-                    value={props.cashAdvanceLimit}
+                    value={Data.cashAdvanceLimit}
                   />
-            <Button mt='20px' colorScheme='blue'>Update</Button>
+                <Button mt='20px' colorScheme='blue' onClick={handleSubmit}>Update</Button>
                 </FormControl>
               </div>
             </div>
