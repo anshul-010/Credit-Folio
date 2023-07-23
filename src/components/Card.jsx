@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Card = (props) => {
   const isAdmin = useSelector((state) => state.authReducer.isAdmin);
@@ -72,6 +72,7 @@ const Card = (props) => {
         </p>
       )}
       {isAdmin && (
+        
         <button
           style={{
             background: "#23AAF2",
@@ -81,9 +82,9 @@ const Card = (props) => {
             padding: "5px 30px",
             color: "#fff",
           }}
-          // onClick={}
+          
         >
-          Edit
+          <Link to={`/admin/edit/credit/${props.id}`}>Edit</Link>
         </button>
       )}
     </div>

@@ -7,10 +7,10 @@ import Card from './Card';
 import { Sidebar } from './Sidebar';
 import { useSearchParams } from 'react-router-dom';
 
+export let userData = []
 
 const CreditCard = () => {
     const [creditCard,setCreditCard]=useState([])
-
     const [searchparams,setSearchParams] = useSearchParams()
 
     let paramsObj={
@@ -27,6 +27,7 @@ const CreditCard = () => {
   .then((res)=>{
       // console.log(res.data);
       setCreditCard(res.data)
+      userData = res.data
   })
   },[searchparams])
   // console.log(creditCard);

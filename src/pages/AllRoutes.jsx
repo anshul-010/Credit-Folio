@@ -13,6 +13,7 @@ import { Education } from "./Education";
 import { HelpCenter } from "./HelpCenter";
 // import  from './'
 import Admin from "./Admin";
+import { EditCreditCard } from "./EditCreditCard";
 
 const AllRoutes = () => {
   return (
@@ -31,6 +32,7 @@ const AllRoutes = () => {
       <Route path='/credit-report/' element={<><ReportPage /></> } />
       <Route path='/credit-report/:tab' element={<><ReportPage /> </>} />
       <Route path='/admin' element={<><Admin /> </>} />
+      <Route path='/admin/edit/credit/:id' element={<EditCreditCard/>} />
       <Route path='/admin/:tab' element={<><Admin /> </>} />
       <Route path='/offers' element={<UserDetail />} />
       <Route path='/alerts' element={<UserDetail />} />
