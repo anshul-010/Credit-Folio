@@ -46,7 +46,7 @@ const [SignUpStatus, setSignUpStatus] = useState(false);
         </div>
         <div>
           {/* <label>PAN-Card:</label> */}
-          <input type="text" name="name" placeholder='PAN' value={formData.PAN} onChange={handleChange} required />
+          <input type="text" name="name" placeholder='PAN' maxLength={10} value={formData.PAN} onChange={handleChange} required />
         </div>
         <div>
           {/* <label>Email:</label> */}
@@ -54,7 +54,7 @@ const [SignUpStatus, setSignUpStatus] = useState(false);
         </div>
         <div>
           {/* <label>mobile:</label> */}
-          <input type="number" name="mobile" placeholder='mobile' value={formData.mobile} onChange={handleChange} required />
+          <input type="number" name="mobile" placeholder='mobile' maxLength={10} value={formData.mobile} onChange={handleChange} required />
         </div>
         <div>
           {/* <label>Password:</label> */}
