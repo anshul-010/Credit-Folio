@@ -86,14 +86,12 @@ const DIV = styled.div`
 
   }
   h1{
-    h1{
     /* margin-left:300px ; */
     font-size: 18px ;
     font-weight: 500;
     color: #333;
     margin: 1rem auto ;
     width: fit-content;
-  }
   }
 
 `;

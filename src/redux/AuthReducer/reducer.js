@@ -1,12 +1,19 @@
 import { LOGIN_FAILURE, LOGIN_REQUEST, LOGIN_USER_SUCCESS,LOGIN_ADMIN_SUCCESS, LOGOUT } from "../actionTypes"
 
+let temp= localStorage.getItem("LoginUserLS");
+    temp= JSON.parse(temp);
+
+    let Authls
+    if(temp){
+        Authls=true
+    }
 
 const initialState ={
     isLoading: false,
     isError: false,
-    isAuth: false,
+    isAuth: Authls ||false,
     isAdmin: false,
-    User:{},
+    User: temp || {},
   }
 
   export const reducer =(state=initialState,{type,payload})=>{

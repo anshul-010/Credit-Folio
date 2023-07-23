@@ -1,0 +1,389 @@
+{
+  "accountGroupDetails": [
+    {
+      "accountGroup": "CHECKING",
+      "CreditScore": 778,
+      "checkingAccountsDetails": [
+        {
+          "productName": "Business Checking",
+          "accountNickname": "My checking account",
+          "accountDescription": "Business Checking - 9594",
+          "balanceType": "ASSET",
+          "displayAccountNumber": "XXXXXX9594",
+          "id": 1,
+          "currencyCode": "INR",
+          "accountStatus": "ACTIVE",
+          "currentBalance": 100000.25,
+          "availableBalance": 150000.25
+        }
+      ],
+      "savingsAccountsDetails": [
+        {
+          "productName": "Citi Gold Savings Account",
+          "accountNickname": "Personal Savings Account",
+          "accountDescription": "Citi Gold Savings Account - 2033",
+          "balanceType": "ASSET",
+          "displayAccountNumber": "XXXXXX2033",
+          "id": 1,
+          "currencyCode": "INR",
+          "accountStatus": "ACTIVE",
+          "currentBalance": 100000.25,
+          "availableBalance": 150000.25
+        }
+      ],
+      "brokerageAccountsDetails": [
+        {
+          "accountId": "da549a7cc86472ee05272c7bd0a4483f57174f2110e7ad961a267995031fda66c6d5475de467a65739750107b621e5a01be7cc0dc085a825fa384795904293f6",
+          "displayAccountNumber": "XXXXX1035",
+          "accountRegistrationType": "RETAIL",
+          "accountTradingCapableFlag": true,
+          "balanceType": "ASSET",
+          "productName": "Brokerage IRA",
+          "accountDescription": "Brokerage IRA-1035",
+          "brokerageAccountTransactionTypes": [
+            "CASH"
+          ],
+          "accountHoldings": [
+            {
+              "currencyCode": "INR",
+              "cusip": "140194101",
+              "holdingCategory": "Equities",
+              "quantity": 100,
+              "securityName": "Kotak Securities",
+              "asOfDateTime": "2023-05-21T18:28:00.000+0000",
+              "assetClass": "EQUITY",
+              "symbol": "CAIFX",
+              "price": 32.41,
+              "totalValueAmount": 324.1,
+              "changeInPercent": -0.1,
+              "changeInPrice": -0.015,
+              "changeInValue": -10,
+              "previousPrice": 31
+            }
+          ],
+          "totalPortfolioBalanceAmount": "3643150.72"
+        }
+      ],
+      "retirementAccountsDetails": [
+        {
+          "productName": "Rollover IRA",
+          "balanceType": "ASSET",
+          "displayAccountNumber": "XXX2766",
+          "accountDescription": "Rollover IRA-2766",
+          "accountId": "bd0fbd58e6e3d2fec034a0f4d8a41f8f0533b7f93a02a11d3fa80f7a66c62ebdd77d0dd67787d4e4f0e4949116937f429748535d1698ae0bab6e7122e884bb02",
+          "accountValue": 90000.15,
+          "accountStatus": "ACTIVE",
+          "asOfDateTime": "2020-04-10",
+          "retirementPlanComponents": [
+            {
+              "componentName": "Variable CD-2766",
+              "currencyCode": "INR",
+              "currentTerms": "2 years",
+              "totalValueAmount": 4676.36,
+              "interestPaidYTD": 324.12,
+              "nextMaturityDate": "2020-06-03"
+            }
+          ]
+        }
+      ],
+      "totalCurrentBalance": {
+        "localCurrencyCode": "INR",
+        "localCurrencyBalanceAmount": 89000.12
+      },
+      "totalAvailableBalance": {
+        "localCurrencyCode": "INR",
+        "localCurrencyBalanceAmount": 890000.12
+      }
+    }
+  ],
+  "creditCardAccountsDetails": [
+    {
+      "productName": "Citi Rewards+℠ Credit Card",
+      "accountDescription": "Citi Rewards+℠ Card - 2002",
+      "balanceType": "LIABILITY",
+      "displayAccountNumber": "XXXXXXXXXXXX7899",
+      "id": 1,
+      "img":"https://1.bp.blogspot.com/-pmKRYc8c7eY/XQoU-hoi9QI/AAAAAAAABO4/BAH_lQKWig0kCTPjYouQVlt7feSAbEzpQCLcBGAs/s1600/CItibank%2BRewards%2BCredit%2BCard.webp",
+      "currencyCode": "INR",
+      "accountStatus": "ACTIVE",
+      "availableCredit": 75000,
+      "creditLimit": 90000,
+      "paymentDueAmount": 1500,
+      "paymentDueDate": "2013-06-27",
+      "currentBalance": 10000.25,
+      "lastStatementBalance": 5000.25,
+      "lastStatementDate": "2019-02-27",
+      "cashAdvanceLimit": 5000,
+      "cashAdvanceAvailableAmount": 2500,
+      "lastPaymentAmount": 1500.25,
+      "lastPaymentDate": "2019-06-12",
+      "ctdPurchaseBalanceAmount": 300.25,
+      "purchaseSpendLimitAmount": 2000,
+      "remainingPurchaseSpendAmount": 1699.75
+    },
+    {
+      "productName": "SBI Cashback Credit Card",
+      "accountDescription": "SBI Cashback Card - 2022",
+      "balanceType": "LIABILITY",
+      "displayAccountNumber": "XXXXXXXXXXXX3478",
+      "id": 2,
+      "img":"https://cardinsider.com/wp-content/uploads/2023/05/slider.png-1.webp",
+      "currencyCode": "INR",
+      "accountStatus": "DORMANT",
+      "availableCredit": 75000,
+      "creditLimit": 80000,
+      "paymentDueAmount": 1500,
+      "paymentDueDate": "2013-06-27",
+      "currentBalance": 10000.25,
+      "lastStatementBalance": 5000.25,
+      "lastStatementDate": "2019-02-27",
+      "cashAdvanceLimit": 5000,
+      "cashAdvanceAvailableAmount": 2500,
+      "lastPaymentAmount": 1500.25,
+      "lastPaymentDate": "2019-06-12",
+      "ctdPurchaseBalanceAmount": 300.25,
+      "purchaseSpendLimitAmount": 2000,
+      "remainingPurchaseSpendAmount": 1699.75
+    },
+    {
+      "productName": "HDFC Millenia Credit Card",
+      "accountDescription": "HDFC Millenia Card - 2015",
+      "balanceType": "LIABILITY",
+      "displayAccountNumber": "XXXXXXXXXXXX2344",
+      "id": 3,
+      "img":"https://v.hdfcbank.com/content/dam/hdfc-aem-microsites/htdocs/common/2021/jan/calculator/debit-card-cashbackcalculator/images/cards/millennia_dual.png",
+      "currencyCode": "INR",
+      "accountStatus": "ACTIVE",
+      "availableCredit": 75000,
+      "creditLimit": 50000,
+      "paymentDueAmount": 1500,
+      "paymentDueDate": "2013-06-27",
+      "currentBalance": 10000.25,
+      "lastStatementBalance": 5000.25,
+      "lastStatementDate": "2019-02-27",
+      "cashAdvanceLimit": 5000,
+      "cashAdvanceAvailableAmount": 2500,
+      "lastPaymentAmount": 1500.25,
+      "lastPaymentDate": "2019-06-12",
+      "ctdPurchaseBalanceAmount": 300.25,
+      "purchaseSpendLimitAmount": 2000,
+      "remainingPurchaseSpendAmount": 1699.75
+    },
+    {
+      "productName": "Axis My Zone Credit Card",
+      "accountDescription": "Axis Card - 2018",
+      "balanceType": "LIABILITY",
+      "displayAccountNumber": "XXXXXXXXXXXX5195",
+      "id": 4,
+      "img":"https://cardinsider.com/wp-content/uploads/2021/06/AXIS-Bank-MY-ZONE-credit-card-1.png",
+      "currencyCode": "INR",
+      "accountStatus": "DORMANT",
+      "availableCredit": 75000,
+      "creditLimit": 30000,
+      "paymentDueAmount": 1500,
+      "paymentDueDate": "2013-06-27",
+      "currentBalance": 10000.25,
+      "lastStatementBalance": 5000.25,
+      "lastStatementDate": "2019-02-27",
+      "cashAdvanceLimit": 5000,
+      "cashAdvanceAvailableAmount": 2500,
+      "lastPaymentAmount": 1500.25,
+      "lastPaymentDate": "2019-06-12",
+      "ctdPurchaseBalanceAmount": 300.25,
+      "purchaseSpendLimitAmount": 2000,
+      "remainingPurchaseSpendAmount": 1699.75
+    }
+  ],
+  "loanAccountsDetails": [
+    {
+      "productName": "Personal Loan",
+      "balanceType": "LIABILITY",
+      "displayAccountNumber": "XXXXX1035",
+      "accountDescription": "Personal Loan-1035",
+      "accountNickname": "My personal loan",
+      "accountStatus": "ACTIVE",
+      "id": 1,
+      "img":"https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/blog/what-is-loan-account-number-717x404.jpg",
+      "creditLimit": 90000,
+      "currencyCode": "INR",
+      "currentBalanceAmount": 10000,
+      "creditAvailableAmount": 9000,
+      "paymentDueAmount": 4000,
+      "paymentDueDate": "2023-06-27",
+      "autoPayFlag": true,
+      "lastPaymentAmount": 500,
+      "lastPaymentDate": "2023-06-12"
+    },
+    {
+      "productName": "Consumer Loan",
+      "balanceType": "LIABILITY",
+      "displayAccountNumber": "XXXXX1345",
+      "accountDescription": "Consumer Loan-1455",
+      "accountNickname": "My Consumer loan",
+      "accountStatus": "ACTIVE",
+      "id": 2,
+      "img":"https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/blog/what-is-loan-account-number-717x404.jpg",
+      "creditLimit": 110000,
+      "currencyCode": "INR",
+      "currentBalanceAmount": 10000,
+      "creditAvailableAmount": 9000,
+      "paymentDueAmount": 4000,
+      "paymentDueDate": "2023-06-27",
+      "autoPayFlag": true,
+      "lastPaymentAmount": 500,
+      "lastPaymentDate": "2023-06-12"
+    },
+    {
+      "productName": "Home Loan",
+      "balanceType": "LIABILITY",
+      "displayAccountNumber": "XXXXX3445",
+      "accountDescription": "Home Loan-1675",
+      "accountNickname": "My Home loan",
+      "accountStatus": "DORMANT",
+      "id": 3,
+      "img":"https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/blog/what-is-loan-account-number-717x404.jpg",
+      "creditLimit": 210000,
+      "currencyCode": "INR",
+      "currentBalanceAmount": 10000,
+      "creditAvailableAmount": 9000,
+      "paymentDueAmount": 4000,
+      "paymentDueDate": "2023-06-27",
+      "autoPayFlag": true,
+      "lastPaymentAmount": 500,
+      "lastPaymentDate": "2023-06-12"
+    },
+    {
+      "productName": "Car Loan",
+      "balanceType": "LIABILITY",
+      "displayAccountNumber": "XXXXX6787",
+      "accountDescription": "Car Loan-1546",
+      "accountNickname": "My Car loan",
+      "accountStatus": "ACTIVE",
+      "id": 4,
+      "img":"https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/blog/what-is-loan-account-number-717x404.jpg",
+      "creditLimit": 510000,
+      "currencyCode": "INR",
+      "currentBalanceAmount": 10000,
+      "creditAvailableAmount": 9000,
+      "paymentDueAmount": 4000,
+      "paymentDueDate": "2023-06-27",
+      "autoPayFlag": true,
+      "lastPaymentAmount": 500,
+      "lastPaymentDate": "2023-06-12"
+    },
+    {
+      "productName": "Bussiness Loan",
+      "balanceType": "LIABILITY",
+      "displayAccountNumber": "XXXXX5673",
+      "accountDescription": "Bussiness Loan-1534",
+      "accountNickname": "My Bussiness loan",
+      "accountStatus": "ACTIVE",
+      "id": 5,
+      "img":"https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/blog/what-is-loan-account-number-717x404.jpg",
+      "creditLimit": 310000,
+      "currencyCode": "INR",
+      "currentBalanceAmount": 10000,
+      "creditAvailableAmount": 9000,
+      "paymentDueAmount": 4000,
+      "paymentDueDate": "2023-06-27",
+      "autoPayFlag": true,
+      "lastPaymentAmount": 500,
+      "lastPaymentDate": "2023-06-12"
+    }
+  ],
+  "lineOfCreditAccountsDetails": [
+    {
+      "productName": "Checking Plus Line of Credit",
+      "balanceType": "LIABILITY",
+      "displayAccountNumber": "XXXXX1035",
+      "accountDescription": "Checking Plus Line of Credit-1035",
+      "accountNickname": "Checking plus account",
+      "id": 1,
+      "img":"https://media.istockphoto.com/id/1344508981/vector/vintage-hexagon-label-banner-with-word-postpaid-in-black-color-on-white-background.jpg?s=612x612&w=0&k=20&c=7SfMUPPeDnksabexNTdp4QOo01IS9Eenbn2naAMXtMU=",
+      "creditLimit": 90000,
+      "currencyCode": "INR",
+      "accountStatus": "ACTIVE",
+      "creditAvailableAmount": 90000,
+      "currentBalanceAmount": 100000,
+      "paymentDueAmount": 50000,
+      "lastPaymentAmount": 40000,
+      "lastPaymentDate": "2023-04-10"
+    },
+    {
+      "productName": "Flipkart Pay Later",
+      "balanceType": "LIABILITY",
+      "displayAccountNumber": "XXXXX8935",
+      "accountDescription": "Aditya Brila Group Line of Credit-1454",
+      "accountNickname": "Flipkart Pay Later Line of Credit",
+      "id": 2,
+      "img":"https://img.republicworld.com/republic-prod/stories/promolarge/xhdpi/8pxau2ay7rcihcxr_1597127365.jpeg",
+      "creditLimit": 80000,
+      "currencyCode": "INR",
+      "accountStatus": "ACTIVE",
+      "creditAvailableAmount": 10000,
+      "currentBalanceAmount": 100000,
+      "paymentDueAmount": 50000,
+      "lastPaymentAmount": 40000,
+      "lastPaymentDate": "2023-04-10"
+    },
+    {
+      "productName": "Paytm Postpaid",
+      "balanceType": "LIABILITY",
+      "displayAccountNumber": "XXXXX8245",
+      "accountDescription": "Fullerton Pvt Ltd Line of Credit-1454",
+      "accountNickname": "Paytm PostPaid Line of Credit",
+      "id": 3,
+      "img":"https://paytm.com/blog/wp-content/uploads/2022/08/Blog_-Paytm-Postpaid_final.png",
+      "creditLimit": 100000,
+      "currencyCode": "INR",
+      "accountStatus": "DORMANT",
+      "creditAvailableAmount": 90000,
+      "currentBalanceAmount": 100000,
+      "paymentDueAmount": 50000,
+      "lastPaymentAmount": 40000,
+      "lastPaymentDate": "2023-04-10"
+    }
+  ],
+  "Auth": [
+    {
+      "PAN": "AAAAAAAAAA",
+      "email": "admin@gmail.com",
+      "name": "admin",
+      "password": "admin",
+      "mobile": 9344242455,
+      "id": 1
+    },
+    {
+      "PAN": "BKSTI7364K",
+      "email": "xyz@gmail.com",
+      "name": "test",
+      "password": "test",
+      "mobile": 9344242455,
+      "id": 2
+    },
+    {
+      "name": "Shashi",
+      "email": "abc@gmail.com",
+      "PAN": "BKSTI7364K",
+      "password": "bob",
+      "mobile": 9344242455,
+      "id": 3
+    },
+    {
+      "name": "Shashi",
+      "PAN": "SJDHI7654H",
+      "email": "Bob@example.com",
+      "mobile": 9344242455,
+      "password": "bob",
+      "id": 4
+    },
+    {
+      "name": "Shashi",
+      "PAN": "SJDHI7654H",
+      "email": "Bob@example.com",
+      "password": "bob",
+      "mobile": "11111111",
+      "id": 5
+    }
+  ]
+}
