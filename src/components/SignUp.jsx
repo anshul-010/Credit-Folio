@@ -10,7 +10,8 @@ const [SignUpStatus, setSignUpStatus] = useState(false);
     name: 'Shashi',
     PAN:`SJDHI7654H`,
     email: 'Bob@example.com',
-    password: 'bob'
+    password: 'bob',
+    mobile:'11111111'
   });
 
   const handleChange = (event) => {
@@ -49,6 +50,10 @@ const [SignUpStatus, setSignUpStatus] = useState(false);
         <div>
           {/* <label>Email:</label> */}
           <input type="email" name="email" placeholder='Email' value={formData.email} onChange={handleChange} required />
+        </div>
+        <div>
+          {/* <label>mobile:</label> */}
+          <input type="number" name="mobile" placeholder='mobile' value={formData.mobile} onChange={handleChange} required />
         </div>
         <div>
           {/* <label>Password:</label> */}
