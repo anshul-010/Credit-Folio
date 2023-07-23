@@ -22,7 +22,7 @@
 <h3>Admin Page </h3>
 <p>An admin page is included in the app to manage user roles, permissions, and other administrative tasks. The admin dashboard provides a secure and intuitive interface for authorized personnel to manage the system efficiently. </p>
 
-<h2>Login/SignUp Functionality </h2>
+<h3>Login/SignUp Functionality </h3>
 <p> The app features a secure login and signup system to protect sensitive credit score data. Users can create accounts, log in with their credentials, and access their personalized data securely.</p>
 
 <h3>Chakra-UI Integration </h3>
