@@ -6,7 +6,7 @@ export const Topbar = () => {
   return (
     <div>
         <div className='navbar'>
-            <div className='logo'><Link to='/'>CIBIL</Link></div>
+            <div className='logo'><Link to='/'>Credit Folio</Link></div>
             <div className="pages">
               <Link to='/creditreport'><p>Credit Report</p></Link>
               <Link to='/education'><p>Credit Education</p></Link>

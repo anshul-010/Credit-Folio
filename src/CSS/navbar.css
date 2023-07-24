@@ -15,10 +15,10 @@
 
 .logo{
     border-right: 1px solid gray;
-    width: 10%;
-    font-size: xx-large;
+    width: 15%;
+    font-size: x-large;
     color: rgb(246, 215, 39);
-    margin: auto;
+    margin: auto 15px;
     font-family: 'Times New Roman', Times, serif;
     
 }
