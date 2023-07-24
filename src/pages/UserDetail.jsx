@@ -16,9 +16,6 @@ const UserDetail = () => {
         <CreditOffer/>
        
         <Cards/>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati facilis quisquam nihil sed labore voluptates sapiente fugiat blanditiis repudiandae vero?</p>
-        <br />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor reiciendis quasi mollitia odit vitae eum sint eaque ex, nemo architecto omnis ad, quisquam repudiandae corrupti sed aliquam blanditiis numquam exercitationem?</p>
         <hr style={{backgroundColor:'yellow',height:"4px"}} />
         <Footer/>
     </div>

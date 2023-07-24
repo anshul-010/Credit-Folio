@@ -9,7 +9,7 @@ let temp= localStorage.getItem("LoginUserLS");
     }
 
     let Adminls
-    if(temp.name==="admin"){
+    if(temp?.name==="admin"){
         Adminls=true
     }
 
