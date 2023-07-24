@@ -46,7 +46,7 @@ const LinkItems = [
 export default function Admin({ children }) {
   const { tab } = useParams();
   const { isOpen, onOpen, onClose } = useDisclosure();
-
+  // console.log(tab)
   return (
     <Box
       minH='20vh'
@@ -86,7 +86,8 @@ export default function Admin({ children }) {
         w='80%'
         mr='2px'
       >
-        {tab === "CREDIT-CARD" && <CreditCard />}
+        {tab ==="CREDIT-CARD" && <CreditCard />}
+        {tab === undefined && <CreditCard />}
         {tab === "LOANS" && <Loan />}
         {tab === "POSTPAID" && <Postpaid />}
       </Box>
