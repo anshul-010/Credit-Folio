@@ -70,6 +70,7 @@ export default function ReportPage({ children }) {
       </Box>
 
       <Box overflowY='scroll' overflowX='hidden' h='500px' ml='auto' w='80%' mr='2px'>
+       {tab === undefined && <Personalinfo/>}
        {tab === 'Personal-Information' && <Personalinfo/>}
        {tab === 'Contact-Information' && <ContactInfo/>}
        {tab === 'Employment-Information' && <EmployeInfo/>}
@@ -109,7 +110,6 @@ const SidebarContent = ({ onClose, ...rest }) => {
 
 
 const NavItem = ({ icon, children, ...rest }) => {
-  console.log(children.split(' ').join('-'))
   const {tab} = useParams()
   let activeTab = children.split(' ').join('-')
   let path = '/credit-Report/'+activeTab

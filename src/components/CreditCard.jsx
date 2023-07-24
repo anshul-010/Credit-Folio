@@ -25,11 +25,9 @@ const CreditCard = () => {
   useEffect(()=>{
     axios.get(`https://mock-api-credit-card.onrender.com/creditCardAccountsDetails`,paramsObj)
   .then((res)=>{
-      // console.log(res.data);
       setCreditCard(res.data)
   })
   },[searchparams])
-  // console.log(creditCard);
   return (
     <DIV>
       <Sidebar />

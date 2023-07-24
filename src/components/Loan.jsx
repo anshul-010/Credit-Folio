@@ -30,31 +30,15 @@ const Loan = () => {
         paramsObj
       )
       .then((res) => {
-        // console.log(res.data);
         setLoanData(res.data);
       });
   }, [searchparams]);
-  // console.log(loanData);
-
-  //seaching
-  // const handleSearch=(inp)=>{
-
-  //     let newData=loanData.filter((elem)=>{
-  //       return elem.productName.toLowerCase().includes(inp.toLowerCase());
-  //     })
-  //     setLoanData(newData)
-  //   }
-
-  // useEffect(()=>{
-  //   handleSearch(serachInp)
-  // },[serachInp])
 
   return (
     <DIV>
       <Sidebar />
 
       <div>
-        {/* <input type="text" placeholder="Search Products by title" onChange={(e)=>setSerachInp(e.target.value)}/> */}
         <h1>Loans</h1>
         <div class='item'>
           {loanData.length > 0 &&

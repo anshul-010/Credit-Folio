@@ -21,7 +21,6 @@ function App() {
   const isAuth = useSelector(state => state.authReducer).isAuth
   console.log('Auth', isAuth)
   let path = useLocation().pathname.replace('/', '')
-  console.log('!path.includes && isAuth', !path.includes('admin') && isAuth)
   return (
     <>
       <div >

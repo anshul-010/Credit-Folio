@@ -46,7 +46,6 @@ dispatch(loginrequest())
    }
  })
  .catch((err)=>{
-  console.log(err.message);
   dispatch(loginfailure())
  })
 

@@ -3,11 +3,11 @@ import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
 import { login } from "../redux/AuthReducer/action";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-
+import { useToast } from '@chakra-ui/react'
 const Login = () => {
   const [email, setEmail] = useState("admin@gmail.com");
   const [password, setPassword] = useState("admin");
-
+  const toast = useToast()
   const dispatch = useDispatch();
   const isAuth = useSelector((store) => {
     return store.authReducer.isAuth;
@@ -29,6 +29,14 @@ const Login = () => {
       }
       navigate('/home', { replace: true });
     });
+    toast({
+      title: 'login successful',
+      // description: "We've created your account for you.",
+      position:'top',
+      status: 'success',
+      duration: 500,
+      isClosable: true,
+    })
   };
 
   return (

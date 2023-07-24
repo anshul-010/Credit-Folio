@@ -7,7 +7,6 @@ import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => { 
   const username = useSelector(state=>state.authReducer).User.name
-  console.log('username',username)
 
   const dispatch = useDispatch()
 

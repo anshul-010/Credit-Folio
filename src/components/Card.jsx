@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
+import { useToast } from '@chakra-ui/react'
 
 import {
   Modal,
@@ -27,7 +28,6 @@ const Card = (props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const isAdmin = useSelector((state) => state.authReducer.isAdmin);
   
-  console.log("isAdmin", isAdmin);
   const navigate = useNavigate();
   const editHandler = () => {
     navigate("/admin/edit/:id");
@@ -65,6 +65,7 @@ const Card = (props) => {
   }
 
   const [Data, setData] = useState(props);
+  const toast = useToast()
 
   function handleChange(e) {
     const { name, value } = e.target;
@@ -86,6 +87,14 @@ let id = props.id
     setTimeout(()=>{
         window.location.reload()
     },800)
+    toast({
+      title: 'update successful',
+      // description: "We've created your account for you.",
+      // position:'top',
+      status: 'success',
+      duration: 500,
+      isClosable: true,
+    })
   }
 
   return (

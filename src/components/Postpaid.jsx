@@ -24,11 +24,9 @@ const Postpaid = () => {
   useEffect(()=>{
     axios.get(`https://mock-api-credit-card.onrender.com/lineOfCreditAccountsDetails`,paramsObj)
   .then((res)=>{
-      console.log(res.data);
       setPostpaid(res.data)
   })
   },[searchparams])
-  console.log(postpaid);
   return (
     <DIV>
       <Sidebar />

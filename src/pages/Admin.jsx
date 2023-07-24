@@ -86,6 +86,7 @@ export default function Admin({ children }) {
         w='80%'
         mr='2px'
       >
+        {tab === undefined && <CreditCard />}
         {tab === "CREDIT-CARD" && <CreditCard />}
         {tab === "LOANS" && <Loan />}
         {tab === "POSTPAID" && <Postpaid />}
@@ -152,11 +153,9 @@ const SidebarContent = ({ onClose, ...rest }) => {
 };
 
 const NavItem = ({ icon, children, ...rest }) => {
-  console.log(children.split(" ").join("-"));
   const { tab } = useParams();
   let activeTab = children.split(" ").join("-");
   let path = "/admin/" + activeTab;
-  console.log(path, "path");
   return (
     <Link
       to={path}

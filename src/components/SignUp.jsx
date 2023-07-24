@@ -24,12 +24,10 @@ const [SignUpStatus, setSignUpStatus] = useState(false);
     event.preventDefault();
 
 
-    console.log(formData);
     
     axios.post('https://mock-api-credit-card.onrender.com/Auth', formData)
       .then((response) => {
         setSignUpStatus(true)
-        console.log('Sign up successful:', response.data);
       })
       .catch((error) => {
         console.error('Sign up failed:', error);

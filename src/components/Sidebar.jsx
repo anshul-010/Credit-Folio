@@ -9,7 +9,6 @@ export const Sidebar = () => {
   const [accountStatus,setAccountStatus]= useState(initialAccountStatus,"")
   const initialOrder=searchParams.get("order")
   const [order,setOrder]= useState(initialOrder||"")
-  // console.log(searchParams);
 
 useEffect(()=>{
 const params={
