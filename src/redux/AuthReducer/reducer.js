@@ -8,11 +8,16 @@ let temp= localStorage.getItem("LoginUserLS");
         Authls=true
     }
 
+    let Adminls
+    if(temp.name==="admin"){
+        Adminls=true
+    }
+
 const initialState ={
     isLoading: false,
     isError: false,
     isAuth: Authls ||false,
-    isAdmin: false,
+    isAdmin: Adminls || false,
     User: temp || {},
   }
 

@@ -26,6 +26,7 @@ import {
 const Card = (props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const isAdmin = useSelector((state) => state.authReducer.isAdmin);
+  
   console.log("isAdmin", isAdmin);
   const navigate = useNavigate();
   const editHandler = () => {
@@ -82,6 +83,9 @@ const Card = (props) => {
 let id = props.id
   function handleSubmit(e) {
     patchRequest(Data,id)
+    setTimeout(()=>{
+        window.location.reload()
+    },800)
   }
 
   return (
