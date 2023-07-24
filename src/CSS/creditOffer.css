@@ -1,0 +1,66 @@
+.card-main-div{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    display: flex;
+    background-color: rgb(251, 249, 249);
+    justify-content: space-between;
+    /* position: absolute; */
+    width: 75%;
+    margin: auto;
+}
+.card-main-div>div{
+    /* border: 1px solid blue; */
+    margin: 1%;
+}
+
+.img-card{
+    width: 20%;
+}
+.img-card>img{
+    width: 50%;
+}
+.img-card>h2{
+    margin-top: 4%;
+    font-size: medium;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+}
+.card-main-div p{
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+}
+.app-btn{
+    width: 10%;
+}
+.card-main-div button{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    background-color: orange;
+    padding: 10% 30%;
+    font-size: large;
+    color: white;
+    font-weight: 500;
+}
+.app-btn>h3{
+    color: rgb(0, 106, 255);
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 8%;
+}
+.app-btn>h3:hover{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 700px){
+    .card-main-div{
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+    }
+    .img-card{
+        width: 60%;
+    }
+    .app-btn{
+        width: 35%;
+        margin: auto;
+    }
+}

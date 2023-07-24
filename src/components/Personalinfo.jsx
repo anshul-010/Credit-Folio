@@ -11,8 +11,10 @@ import {
     TableCaption,
     TableContainer,
   } from '@chakra-ui/react'
+import { useSelector } from 'react-redux'
 
 export const Personalinfo = () => {
+    const user = useSelector((store)=>store.authReducer.User)
   return (
     <div style={{border:"1px solid #555", padding:"2%",width:"100%"}} >
         <div className='top'>
@@ -40,7 +42,7 @@ export const Personalinfo = () => {
                 </Thead>
                 <Tbody className='table-body'>
                 <Tr>
-                    <Td>{"demo"}</Td>
+                    <Td>{`${user.name}`}</Td>
                     <Td>11/06/2000</Td>
                     <Td >Male</Td>
                 </Tr>
@@ -60,7 +62,7 @@ export const Personalinfo = () => {
                 <Tbody className='table-body'>
                 <Tr>
                     <Td>Number(PAN)</Td>
-                    <Td>{}</Td>
+                    <Td>{`${user.PAN}`}</Td>
                     <Td >{}</Td>
                     <Td >{}</Td>
                 </Tr>
