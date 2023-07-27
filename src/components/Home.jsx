@@ -19,12 +19,12 @@ export const Home = () => {
         <div className='slider'>
             <div className='slider-content' >
                 <h1>Banks Check Your CIBIL Score Before Approving Your Loan*</h1>
-                <Link to='/login'><button>GET FREE CIBIL SCORE & REPORT</button></Link>
+                <Link to='/login'><button>Get Free Cibil Score & Report</button></Link>
                 <p>Already have a CIBIL account?<a href="#">Log In</a></p>
                 <p>Don't worry. Checking your own credit score won't lower it.</p>
             </div>
             <div className='lapi-img' >
-                <img src={img} alt="not fount" />
+                <img style={{width: '600px'}} src='./home-banner.svg' alt="not fount" />
             </div>
         </div>
         <div className='text-line' >
@@ -66,19 +66,19 @@ export const Home = () => {
                     <img src={FAQ} alt="" />
                     <h3>FAQs</h3>
                     <p>Get quick answers to your most common questions.</p>
-                    <h2>KNOW MORE</h2>
+                    <h2>Know more</h2>
                 </div>
                 <div className='card' >
                     <img src={report} alt="" />
                     <h3>Why your CIBIL Score and Report</h3>
                     <p>Learn how it matters not only to you, but also to lenders.</p>
-                    <h2>KNOW MORE</h2>
+                    <h2>Know more</h2>
                 </div>
                 <div className='card' >
                     <img src={approve} alt="" />
                     <h3>Loan approval process</h3>
                     <p>Understand how banks evaluate your loan application.</p>
-                    <h2>KNOW MORE</h2>
+                    <h2>Know more</h2>
                 </div>
             </div>
             <p>We are India's leading credit information company with one of the largest collections of consumer information.</p>
@@ -91,8 +91,15 @@ export const Home = () => {
                 <h2>Monitor Your Company's Credit Health with CIBIL Rank.</h2>
                 <p>Easy access - check your report online anytime, anywhere.</p>
                 <h3>70% of all companies who were sanctioned loans had a CIBIL RANK between 4 and 1.</h3>
-                <button><Link to='/login'>GET STARTED</Link></button>
+                <button><Link to='/login'>Get Started</Link></button>
             </div>
+        </div>
+        <div className='app'>
+            <div className='app-link' style={{display: 'flex'}}>
+                <p style={{padding: '3rem'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit assumenda provident vero inventore ratione non vitae placeat! Quod, commodi? Nemo, veritatis corporis! Eligendi praesentium odit architecto eaque sunt laborum fuga!</p>
+                <p style={{padding: '3rem'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit assumenda provident vero inventore ratione non vitae placeat! Quod, commodi? Nemo, veritatis corporis! Eligendi praesentium odit architecto eaque sunt laborum fuga!</p>
+            </div>
+                <p style={{width: '60%', margin: 'auto'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit assumenda provident vero inventore ratione non vitae placeat! Quod, commodi? Nemo, veritatis corporis! Eligendi praesentium odit architecto eaque sunt laborum fuga!</p>
         </div>
         <div className='app'>
             <div className='app-link'>
@@ -102,13 +109,13 @@ export const Home = () => {
             </div>
         </div>
         <div className="pic">
-            <img src={picture} alt="not found" />
+            <img style={{width: '620px',display: 'block', margin: 'auto'}} src='./banner.svg' alt="not found" />
         </div>
         <div className='bottom-text'>
-            <h2>Get your CIBIL Score & Report today.</h2>
-            <button>GET STARTED NOW</button>
+            <h2 style={{marginTop: '2rem'}}>Get your CIBIL Score & Report today.</h2>
+            <button>Get Started Now</button>
         </div>
-        <hr style={{backgroundColor:'yellow',height:"4px"}} />
+        <hr style={{backgroundColor:'#0094e9c2',height:"2px"}} />
         <Footer/>
     </div>
   )

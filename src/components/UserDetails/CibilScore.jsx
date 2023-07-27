@@ -13,7 +13,7 @@ const CibilScore = () => {
   return (
     <div>
       <Box p='1rem' m='2rem auto' maxW='930px' minW='300px'>
-        <HStack border='solid 3px #FF7224' p='1.5rem' justifyContent='space-between' flexWrap='wrap'>
+        <HStack borderRadius='6px' border='solid 1px #ddd' p='1.5rem' justifyContent='space-between' flexWrap='wrap'>
           <Box>
             <Text as='p' fontWeight='bold'>
               You are eligible for unlimited CIBIL Score and reports
@@ -22,7 +22,7 @@ const CibilScore = () => {
               Monitor your credit and improve your loan eligibility.
             </Text>
           </Box>
-          <Button m='0 2rem' color='#fff' bg='#FF7224'>
+          <Button m='0 2rem' fontWeight='500' color='#fff' bg='#3DAEEE'>
             GET UNLIMITED ACCESS NOW
           </Button>
         </HStack>
@@ -30,17 +30,15 @@ const CibilScore = () => {
 
       <HStack
         borderRadius='6px'
-        border='solid 1px #ccc'
+        border='solid 1px #ddd'
         p='10px'
         minW='500px'
         maxW='900px'
         m='1rem auto'
-        boxShadow='0px 0px 2px #ccc'
         alignItems='flex-start'
         justifyContent='space-between'
-        // flexWrap='wrap'
       >
-        <Box  borderRight={"solid 2px #ccc"} p={"1rem"} pr='2.4rem'>
+        <Box  borderRight={"solid 1.5px #ddd"} p={"1rem"} pr='2.4rem'>
           <Text m='10px' as='h2' fontSize='20px'>CIBIL Score</Text>
           <CircularProgress color='#B9CD5D' m='5px' value={77.4} size='150px'>
             <CircularProgressLabel color='#B9CD5D'>774</CircularProgressLabel>
@@ -67,7 +65,7 @@ const CibilScore = () => {
             See how your CIBIL Score compares with the rest of the
             self-monitoring consumers.
           </Text>
-          <Button p={"10px 20px"} w='fit-content' color='#fff' bg={"#FF7224"}>
+          <Button p={"10px 20px"} w='fit-content' fontWeight='500' color='#fff' bg={"#3DAEEE"}>
             KNOW MORE
           </Button>
         </Box>

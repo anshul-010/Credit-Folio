@@ -1,11 +1,9 @@
 .about-top{
-    /* border: 2px solid red; */
     display: flex;
     background-color: rgb(246, 246, 244);
-    
+    padding: .5rem;
 }
 .about-text{
-    /* border: 2px solid blue; */
     width: 50%;
     padding: 3%;
 }
@@ -28,31 +26,28 @@
 
 }
 .about-text>p{
-    font-size: large;
+    font-size: medium;
     font-weight: 400;
 }
 .about-text>button{
     margin: 5% 0% 2% 0%;
-    padding: 10px;
+    padding: 7px 20px;
     border-radius: 22px;
-    font-weight: bold;
-    background-color: rgb(246, 215, 39);
+    color: #fff;
+    background-color: #32A9ED;
 }
 
 .about-middle{
-    /* border: 2px solid red; */
     display: flex;
 }
 .middle-left{
-    /* border: 2px solid blue; */
     width: 35%;
     border-right: 1px solid rgb(183, 179, 179);
-    
 }
 .middle-right{
-    /* border: 2px solid green; */
     width: 65%;
     padding: 2%;
+    font-size: 14px;
 }
 .middle-left>h2{
     font-size: xx-large;
@@ -63,8 +58,8 @@
     text-decoration: underline;
 }
 .middle-left>p{
-    font-size: large;
     margin: 1% 8%;
+    font-size: 14px;
 }
 .middle-left>p:hover{
     cursor: pointer;
@@ -72,7 +67,9 @@
 }
 
 .middle-right>p{
-    font-size: larger;
+    padding: 1rem;
+    color: #333;
+    font-size: 14px;
     font-weight: 400;
     line-height: 2;
 }
@@ -99,9 +96,8 @@
     .middle-left{
         width: 100%;
         border-right: none;
-        border-bottom: 1px solid rgb(171, 168, 168);
+        border-bottom: 1px solid #CCCCCC;
         margin-bottom:2% ;
-        /* text-align: center; */
     }
     .middle-right{
         width: 100%;

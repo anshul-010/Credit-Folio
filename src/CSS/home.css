@@ -1,11 +1,10 @@
 
 .slider{
     display: flex;
-    background-color: rgb(246, 246, 244);
-    /* border: 5px solid yellow; */
+    background-color: rgb(255, 255, 255);
+    margin-top: 5rem;
   }
   .slider-content{
-    /* border: 1px solid red; */
     width: 55%;
   }
   .lapi-img>.lapi-img{
@@ -17,22 +16,24 @@
     font-size: x-large;
     font-weight: bold;
     width: 60%;
-  
+    color: #001C61;
   }
   
   .slider button{
-    /* border: 1px solid blue; */
-    margin: 0% 10% 2% 10%;
-    padding: 10px;
+    margin: 0 1rem 5px 4rem;
+    padding: 10px 20px;
     border-radius: 22px;
-    font-weight: bold;
-    background-color: rgb(246, 215, 39);
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0094e9cd;
   
   }
   .slider p{
-    margin: 1% 10%;
-    font-size: larger;
+    margin: .7rem 0 2px 4rem;
+    font-size: 18px;
     font-weight: 500;
+    color: #001C61 !important;
   }
   
   .text-line{
@@ -40,13 +41,15 @@
     text-align: center;
     padding: 20px;
   }
+
   .text-line>p{
     font-size: xx-large;
   }
 
   .cibil-credit-info{
     /* border: 3px dotted red; */
-    margin-top: 3%;
+    margin-top: 3rem;
+    color: #001C61;
   }
 
   .about-credits{
@@ -59,23 +62,24 @@
   }
 
   .credit-text{
-    /* border: 2px solid blue; */
     margin: 4% 1%;
-    /* line-height: 200%; */
+    font-size: 15px;
   }
 
+
   .credit-text>h2{
-    font-weight: bold;
+    font-weight: 500;
     font-size: larger;
   }
 
   .credit-text>p{
-    font-size: large;
+    font-size: 15px;
+    color: #333;
   }
 
   .credit-text hr{
     height:5px;
-    background-color: rgb(9, 151, 156);
+    background-color: #32A9ED;
     width: 15%;
     margin: 3% 0%;
   }
@@ -91,11 +95,11 @@
     margin: auto;
     margin-bottom: 3%;
     display: block;
-    padding: 9px 24px;
+    padding: 8px 24px;
     border-radius: 22px;
-    background-color: rgb(246, 215, 39);
-    font-weight: bold;
-    
+    color: #ffff;
+    background-color: #32A9ED;
+    font-weight: 500;
   }
 
   .help-center{
@@ -107,13 +111,16 @@
   .help-heading>h2{
     font-size: xx-large;
     font-weight: bold;
-    margin-top: 2%;
-    
+    padding: 3rem;
+    margin-top: 2rem;
+    color: #001C61;
   }
-
+  
   .help-heading>p{
     font-size: larger;
-    margin: 1%;
+    color: #001C61 !important;
+    margin-top: -2rem;
+    margin-bottom: 3rem;
   }
 
   .help-card{
@@ -128,13 +135,11 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 3%;
     padding: 2%;
-    
   }
   .card>img{
     display: block;
-    margin: auto;
+    margin: 1.5rem auto;
     margin-bottom: 5%;
-
   }
 
   .card>h3{
@@ -143,23 +148,26 @@
   }
 
   .card>p{
-    font-size: large;
-    margin: 4%;
+    font-size: 15px;
+    margin-top: 1rem;
+    text-align: left;
+    width: fit-content;
+    margin: inherit auto;
   }
 
   .card>h2{
-    font-size: larger;
-    font-weight: bold;
-    margin-top: 60%;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 4rem;
     margin-bottom:0%;
-    color: rgb(6, 84, 87);
-
+    color: #001C61;
   }
+
   .card>h2:hover{
     cursor: pointer;
     text-decoration: underline;
-    
   }
+
   .card:hover{
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -167,22 +175,24 @@
 
   .help-center>p{
     font-size: larger;
-    margin: 3%;
+    margin: 2rem 0;
+    padding: 3rem 0;
   }
 
   .monitor{
     /* border: 3px solid blue; */
     display: flex;
-    width: 80%;
+    width: 100%;
+    gap: 2rem;
+    padding: 2rem;
     margin: 4% auto;
     background-color: rgb(246, 246, 244);
     padding: 5% 2% 7% 2%;
-    justify-content: space-between;
   }
 
   .monitor-img{
-    /* border: 2px solid orangered; */
-    width: 30%;
+    margin-left: 2rem;
+    width: 300px;
   }
 
   .monitor-text{
@@ -206,10 +216,12 @@
   }
   .monitor-text>button{
     /* border: 2px solid; */
-    background-color: rgb(249, 214, 12);
+    background-color: #32A9ED;
+    color: #fff;
     border-radius: 22px;
-    font-weight: bold;
-    padding: 9px 24px;
+    font-weight: 500;
+    padding: 7px 24px;
+    font-size: 15px;
     margin: 2% 0%;
   }
 
@@ -249,9 +261,11 @@
   }
   .bottom-text>button{
     /* border: 2px solid; */
-    background-color: rgb(249, 214, 12);
+    background-color: #32A9ED;
+    color: #fff;
     border-radius: 22px;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: 500;
     padding: 9px 24px;
     margin: 2% 0%;
   }

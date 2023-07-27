@@ -1,15 +1,15 @@
 .card-main-div{
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border: 1px solid #ccc;
     display: flex;
+    border-radius: 6px;
     background-color: rgb(251, 249, 249);
     justify-content: space-between;
-    /* position: absolute; */
     width: 75%;
     margin: auto;
+    padding: 1rem;
 }
 .card-main-div>div{
-    /* border: 1px solid blue; */
-    margin: 1%;
+    margin: 10px;
 }
 
 .img-card{
@@ -19,7 +19,7 @@
     width: 50%;
 }
 .img-card>h2{
-    margin-top: 4%;
+    margin-top: 1rem;
     font-size: medium;
     font-weight: 500;
     color: rgb(51, 51, 51);
@@ -29,21 +29,21 @@
     color: rgb(51, 51, 51);
 }
 .app-btn{
-    width: 10%;
+    padding: 10px 15px;
 }
 .card-main-div button{
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
     background-color: orange;
     padding: 10% 30%;
-    font-size: large;
     color: white;
+    border-radius: 8px;
     font-weight: 500;
 }
 .app-btn>h3{
-    color: rgb(0, 106, 255);
+    color: rgba(0, 106, 255, 0.648);
     text-decoration: underline;
     text-align: center;
-    margin-top: 8%;
+    margin-top: 10px;
+    font-size: 14px;
 }
 .app-btn>h3:hover{
     cursor: pointer;

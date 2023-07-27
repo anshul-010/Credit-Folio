@@ -1,10 +1,11 @@
 import React from 'react'
 import "../CSS/creditOffer.css"
 import CreditImg from "../images/credit-card-img.png"
+import { Flex } from '@chakra-ui/react'
 
 export const CreditOffer = () => {
   return (
-    <div className='card-main-div'>
+    <div className='card-main-div' style={{width: '95%', display: 'flex', alignItems: 'center'}}>
         <div className='img-card'>
             <img src={CreditImg} alt="" />
             <h2>SBI Card & Payment Services PVT LTD</h2>

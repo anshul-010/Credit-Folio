@@ -42,7 +42,7 @@ const Cards = () => {
             </CardBody>
             <CardFooter>
               <Button color='#fff' bg='#FF7226'>
-                KNOW MORE
+                Know more
               </Button>
             </CardFooter>
           </Card>
@@ -60,7 +60,7 @@ const Cards = () => {
             </CardBody>
             <CardFooter>
               <Button color='#fff' bg='#FF7226'>
-                KNOW MORE
+                Know more
               </Button>
             </CardFooter>
           </Card>

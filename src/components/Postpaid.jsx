@@ -47,6 +47,7 @@ export default Postpaid
 const DIV = styled.div`
   display: flex;
   gap: 20px;
+  padding-left: 1.5rem;
   /* justify-content: space-between; */
   .item{
     

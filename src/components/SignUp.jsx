@@ -35,6 +35,10 @@ const [SignUpStatus, setSignUpStatus] = useState(false);
   };
 
   return (
+    <div style={{display: 'flex', justifyContent: 'center', gap:'2rem', marginTop: '3rem', flexWrap: 'wrap'}}>
+    <div>
+    <img style={{width: '350px', margin: '2rem', opacity: '0.9'}} src="./signup-banner.svg" alt="" />
+    </div>
     <DIV>
       {SignUpStatus ? <h3> SignUp Successful</h3> : <h2>SignUp Page</h2> }
       <form onSubmit={handleSubmit}>
@@ -62,6 +66,7 @@ const [SignUpStatus, setSignUpStatus] = useState(false);
       </form>
       <Link to='/login'><p>Already have an account <span style={{color:'#24ADF3'}}>login here</span></p></Link>
     </DIV>
+    </div>
   );
 };
 
@@ -71,7 +76,7 @@ const DIV = styled.div`
   width: 400px;
   color: #333;
   padding: 20px;
-  margin: 40px auto;
+  /* margin: 40px auto; */
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -99,8 +104,9 @@ const DIV = styled.div`
     padding: 6px;
     border-radius: 6px;
     color: #fff;
-    background-color: orange;
-    font-size: 22px;
+    background-color: #32A9ED;
+    font-size: 18px;
+    font-weight: 300;
     border: none;
   }
   h3{

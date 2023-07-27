@@ -14,7 +14,7 @@ import {
 
 export const EnquiryInfo = () => {
   return (
-        <div style={{border:"1px solid", padding:"2%",width:"100%"}} >
+        <div style={{border:"1px solid #ccc", padding:"2%",width:"100%"}} >
             <div className='top'>
                 <div className='top-left'>
                     Control Number: 5,980,650,023 
@@ -27,7 +27,7 @@ export const EnquiryInfo = () => {
                 Personal Information
             </div>
             <div className='cibil-day'>
-                <p>Your CIBIL Score and Report is 46 days old.<span style={{color:"blue",textDecoration:"underline"}}> Check your latest CIBIL score & Report now</span></p>
+                <p>Your CIBIL Score and Report is 46 days old. <span style={{color:"#0071e9",textDecoration:"underline"}}> Check your latest CIBIL score & Report now</span></p>
             </div>
             <TableContainer className='table'>
                 <Table variant='simple'>

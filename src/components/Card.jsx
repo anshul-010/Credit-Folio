@@ -57,7 +57,8 @@ const Card = (props) => {
     padding: "14px",
     borderRadius: "6px",
     border: "1px solid #ccc",
-    boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+    background: '#ffffffd7',
+    boxShadow: "rgba(41, 41, 41, 0.1) 0px 5px 15px 0px",
   };
 
   function patchRequest(data, id) {

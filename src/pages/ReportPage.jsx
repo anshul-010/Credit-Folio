@@ -42,6 +42,7 @@ const LinkItems = [
 
 export default function ReportPage({ children }) {
   const {tab} = useParams()
+  console.log(tab,'Tab')
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box minH="20vh" overflowX='hidden' bg={useColorModeValue('gray.100', 'gray.900')}>
@@ -69,8 +70,8 @@ export default function ReportPage({ children }) {
         {children}
       </Box>
 
-      <Box overflowY='scroll' overflowX='hidden' h='500px' ml='auto' w='80%' mr='2px'>
-       {tab === undefined && <Personalinfo/>}
+      <Box overflowY='scroll' overflowX='hidden' h='500px' ml='auto' bg='#b5e4fe14' w='80%' mr='2px'>
+       {tab == undefined && <Personalinfo/>}
        {tab === 'Personal-Information' && <Personalinfo/>}
        {tab === 'Contact-Information' && <ContactInfo/>}
        {tab === 'Employment-Information' && <EmployeInfo/>}
@@ -86,15 +87,15 @@ export default function ReportPage({ children }) {
 const SidebarContent = ({ onClose, ...rest }) => {
   return (
     <>
-      <HStack w='100%' bg='#FDD802' >
-        <Text p='10px' textAlign='center' width='284px' as='h2'>Credit Report </Text>
-        <Text w='100%'  minw='300px' bg='#fff' p='10px' pl='3rem' fontSize='25px' as='h2'>Your CIBIL Score is 774</Text>
+      <HStack  w='100%' p='0px' >
+        <Text p='10px 0' textAlign='center' w='232px' as='h2'>Credit Report </Text>
+        <Text  minw='300px' flex={2} bg='#fff' p='10px 4.8rem' fontSize='22px' as='h2'>Your CIBIL Score is 774</Text>
       </HStack>
     <Box
       bg={useColorModeValue('white', 'gray.900')}
       borderRight="1px"
       borderRightColor={useColorModeValue('gray.200', 'gray.700')}
-      w={{ base: 'full', md: 60 }}
+      width='240px'
       position="absolute"
       h="full"
       {...rest}>
@@ -123,7 +124,7 @@ const NavItem = ({ icon, children, ...rest }) => {
         // borderRadius="lg"
         role="group"
         cursor="pointer"
-        bg={tab === activeTab ? 'cyan.400':'#fff' }
+        bg={tab === activeTab ? '#0094e9c2':'#fff' }
         color={tab === activeTab ? '#fff':'#333' }
         {...rest}>
         {icon && (

@@ -1,7 +1,8 @@
+import { Select,Text } from "@chakra-ui/react";
 import { useEffect, useState ,useRef} from "react";
 import { useDispatch } from "react-redux";
 import { useSearchParams } from "react-router-dom";
-import styled from "styled-components";
+// import styled from "styled-components";
 
 export const Sidebar = () => {
   const [searchParams,setSearchParams] =useSearchParams()
@@ -30,24 +31,24 @@ setSearchParams(params)
     setOrder(value)
   }
   return (
-    <DIV> 
+    <div> 
       <div className="stye">
-      <h3>Filter by Account Status</h3>
-      <select name="" onChange={handleaccountStatus}>
+      <Text as='h2' fontSize='14px' pl='2px'>Filter by Account Status</Text>
+      <Select bg='#fff' m='5px 0' onChange={handleaccountStatus}>
         <option value="">Select</option>
         <option value="ACTIVE">ACTIVE</option>
         <option value="DORMANT">DORMANT</option>
-      </select>
+      </Select>
       </div>
 
 
-      <h3>Sort By Credit Limit</h3>
+      <Text as='h2' fontSize='14px' pl='2px' >Sort By Credit Limit</Text>
 
-        <select onChange={handleSort}>
+        <Select bg='#fff' m='5px 0' onChange={handleSort}>
           <option value="">Sort</option>
           <option value="asc">Ascending</option>
           <option value="desc">Descending</option>
-        </select>
+        </Select>
 
       {/* <div className="sorting" onChange={handleSort}>
 
@@ -71,42 +72,42 @@ setSearchParams(params)
         }}>Descending</label>
       </div> */}
 
-    </DIV>
+    </div>
   );
 };
 
-const DIV = styled.div`
-display: flex;
-flex-direction: column;
-/* width: 15%; */
-/* background: red; */
-  /* border-right: 1px solid gray; */
+// const DIV = styled.div`
+// display: flex;
+// flex-direction: column;
+// /* width: 15%; */
+// /* background: red; */
+//   /* border-right: 1px solid gray; */
 
-  .filer input{
-    margin-left: 20px;
-  }
+//   .filer input{
+//     margin-left: 20px;
+//   }
   
-  h3{
-    font-size: 14px;
-    margin-top: 10px;
-    color: #333
+//   h3{
+//     font-size: 14px;
+//     margin-top: 10px;
+//     color: #333
 
-  }
-  .stye{
-    display: flex;
-flex-direction: column;
-  }
-  select{
-    /* text-align: center; */
-    size: 22px;
-    height: 40px;
-    font-size: 16px;
-    margin-right: 1rem;
-    margin-top: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-  }
-  input label{
-    font-size: 20px;
-  }
-`;
+//   }
+//   .stye{
+//     display: flex;
+// flex-direction: column;
+//   }
+//   select{
+//     /* text-align: center; */
+//     size: 22px;
+//     height: 40px;
+//     font-size: 16px;
+//     margin-right: 1rem;
+//     margin-top: 10px;
+//     border: 1px solid #ccc;
+//     border-radius: 6px;
+//   }
+//   input label{
+//     font-size: 20px;
+//   }
+// `;

@@ -48,7 +48,8 @@ export default CreditCard
 const DIV = styled.div`
   display: flex;
   gap: 20px;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
+  padding-left: 1.5rem;
   /* justify-content: space-between; */
   .item{
     display: grid;

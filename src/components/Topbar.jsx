@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export const Topbar = () => {
   return (
     <div>
-        <div className='navbar'>
+        <div className='navbar' style={{border: 'none'}}>
             <div className='logo'><Link to='/'>Credit Folio</Link></div>
             <div className="pages">
               <Link to='/creditreport'><p>Credit Report</p></Link>
@@ -19,7 +19,7 @@ export const Topbar = () => {
             </div>
           
         </div>
-      <hr style={{backgroundColor:'yellow',height:"4px"}} />
+      <hr style={{backgroundColor:'#32a8edcb',height:"2px", marginTop:'-1px'}} />
     </div>
   )
 }

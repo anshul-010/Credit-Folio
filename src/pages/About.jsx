@@ -9,12 +9,12 @@ export const About = () => {
       <div className="about-top">
         <div className='about-text'>
           <h3>TRANSUNION CIBIL</h3>
-          <h2>Know More</h2>
+          <h2>Know more</h2>
           <p>We are India's leading credit information company with one of the largest collections of consumer information.</p>
-          <button>KNOW MORE</button>
+          <button>Know more</button>
         </div>
         <div className='img'>
-          <img src={cityImg} alt="" />
+          <img style={{width: '600px', margin: '1rem auto'}} src='./banner.svg' alt="" />
         </div>
       </div>
       <div className="about-middle">
@@ -49,7 +49,7 @@ export const About = () => {
           </p>
         </div>
       </div>
-      <hr style={{backgroundColor:'yellow',height:"4px"}} />
+      <hr style={{backgroundColor:'0094e9c2',height:"2px"}} />
       <Footer/>
     </div>
   )

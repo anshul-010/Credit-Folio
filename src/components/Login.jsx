@@ -40,6 +40,10 @@ const Login = () => {
   };
 
   return (
+    <div style={{display: 'flex', justifyContent: 'center', gap:'2rem', marginTop: '3rem', flexWrap: 'wrap'}}>
+    <div>
+    <img style={{width: '350px', margin: '2rem', opacity: '0.9'}} src="./login-banner.svg" alt="" />
+    </div>
     <DIV>
       {isAuth ? <h3>Successfully Logged In</h3> : <h2>Login Page</h2>}
 
@@ -64,6 +68,7 @@ const Login = () => {
         </p>
       </Link>
     </DIV>
+    </div>
   );
 };
 export default Login;
@@ -71,13 +76,15 @@ export default Login;
 const DIV = styled.div`
   width: 400px;
   padding: 20px;
-  margin: 40px auto;
   display: flex;
   border-radius: 6px;
   flex-direction: column;
+  margin-top: 2rem;
   gap: 15px;
   border: 1px solid #ccc;
   align-items: center;
+  height: fit-content;
+  padding:  2rem;
 
   input {
     width: 80%;
@@ -90,12 +97,13 @@ const DIV = styled.div`
   }
   button {
     width: 120px;
-    padding: 6px;
-    font-size: large;
-    background-color: orange;
+    padding: 7px;
+    font-size: medium;
+    background-color: #32A9ED;
     color: #fff;
     border-radius: 6px;
-    font-size: 22px;
+    font-weight: 300;
+    font-size: 17px;
     border: none;
   }
   h3 {

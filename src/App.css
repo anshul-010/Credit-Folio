@@ -16,7 +16,9 @@ body{
     background: #bbb;
   }
 .active{
-    background: #F6D727
+    /* background: #F6D727; */
+    background: #0094e9c2;
+    color: #fff;
 }
 p{
     color: #333 !important;
@@ -39,4 +41,9 @@ a{
     justify-content: center;
     height: 100%;
     padding: 8px 10px;
+}
+
+.active-acc-tab{
+  color: #fff !important;
+  background: #0094e9c2 !important;
 }
