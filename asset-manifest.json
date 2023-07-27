@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/credit-folio/static/css/main.efeb1d49.css",
+    "main.js": "/credit-folio/static/js/main.f5964f50.js",
+    "static/js/787.18a62365.chunk.js": "/credit-folio/static/js/787.18a62365.chunk.js",
+    "static/media/credit-card-img.png": "/credit-folio/static/media/credit-card-img.5a9bda8b92383175dcd6.png",
+    "static/media/aboutUS.png": "/credit-folio/static/media/aboutUS.faad2ad67af64735536e.png",
+    "static/media/rankmsme.jpeg": "/credit-folio/static/media/rankmsme.8e08ce798a3996ac0186.jpeg",
+    "static/media/cibil-lapi.png": "/credit-folio/static/media/cibil-lapi.d9bb21bac56e50e670e9.png",
+    "static/media/youtube-icon.svg": "/credit-folio/static/media/youtube-icon.f16d68be9152e4fb59943521dcee68fd.svg",
+    "static/media/report-bg.jpeg": "/credit-folio/static/media/report-bg.94ad1e15cafaa887ce4e.jpeg",
+    "static/media/approve.svg": "/credit-folio/static/media/approve.d8624af38cc2d3050e9e67e70ac3e6b1.svg",
+    "static/media/ifg-lockup-yellow-grey.svg": "/credit-folio/static/media/ifg-lockup-yellow-grey.3d16246a60b1c62e99a7ffdfcd859793.svg",
+    "static/media/report.svg": "/credit-folio/static/media/report.9797e116b5c264ead63698cb44c93e12.svg",
+    "static/media/faq.svg": "/credit-folio/static/media/faq.5410d953ed6cb31e1b9a1206726ce751.svg",
+    "index.html": "/credit-folio/index.html",
+    "static/media/twitter-icon.svg": "/credit-folio/static/media/twitter-icon.922679c1951fd590092c92c976010402.svg",
+    "static/media/linkedin-icon.svg": "/credit-folio/static/media/linkedin-icon.758ab23e3e8ac52e7f173feed15200c6.svg",
+    "static/media/facebook-icon.svg": "/credit-folio/static/media/facebook-icon.c696a4e681be37ad489fba764d35041a.svg",
+    "main.efeb1d49.css.map": "/credit-folio/static/css/main.efeb1d49.css.map",
+    "main.f5964f50.js.map": "/credit-folio/static/js/main.f5964f50.js.map",
+    "787.18a62365.chunk.js.map": "/credit-folio/static/js/787.18a62365.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.efeb1d49.css",
+    "static/js/main.f5964f50.js"
+  ]
+}
