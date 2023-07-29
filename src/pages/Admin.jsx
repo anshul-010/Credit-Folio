@@ -79,6 +79,7 @@ export default function Admin({ children }) {
       </Box>
 
       <Box
+        className="admin-right"
         overflowY='scroll'
         overflowX='hidden'
         h='500px'
@@ -104,12 +105,12 @@ const SidebarContent = ({ onClose, ...rest }) => {
   };
   return (
     <>
-      <HStack w='100%' bg='#23AAF2'>
+      <HStack w='100%'>
         <Text
           p='10px'
           textAlign='center'
           fontSize='20px'
-          color='#fff'
+          color='#333'
           width='284px'
           as='h2'
         >
@@ -167,10 +168,11 @@ const NavItem = ({ icon, children, ...rest }) => {
         p='20px 15px'
         mx='0'
         borderBottom='1px solid #ddd'
+        borderTop='1px soild #fff'
         // borderRadius="lg"
         role='group'
         cursor='pointer'
-        bg={tab === activeTab ? "cyan.400" : "#fff"}
+        bg={tab === activeTab ? "#23AAF2" : "#fff"}
         color={tab === activeTab ? "#fff" : "#333"}
         {...rest}
       >

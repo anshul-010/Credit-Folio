@@ -11,9 +11,9 @@ import React from "react";
 const Cards = () => {
   return (
     <div style={{ margin: "3rem 0" }}>
-      <Stack maxW='100%'  gap='3rem' justifyContent='center'>
-        <HStack w='fit-content' m='auto' flexWrap='wrap' gap='3.5rem'>
-          <Card h='255px' border='solid 1px #ddd'>
+      <Stack maxW='100%'  gap='4rem' justifyContent='center'>
+        <HStack w='fit-content' m='auto' flexWrap='wrap' gap='4rem'>
+          <Card h='255px' border='solid 1px #ddd' w='100%'>
             <CardHeader>
               <Heading size='md'>Refresh Center</Heading>
             </CardHeader>
@@ -23,13 +23,13 @@ const Cards = () => {
               </Text>
             </CardBody>
             <CardFooter>
-              <Button color='#fff' bg='#FF7226'>
+              <Button color='#fff' bg='orange'>
                 REFRESH NOW
               </Button>
             </CardFooter>
           </Card>
 
-          <Card  border='solid 1px #ddd'>
+          <Card  border='solid 1px #ddd' w='100%'>
             <CardHeader>
               <Heading size='md'> Credit Summary</Heading>
             </CardHeader>
@@ -41,7 +41,7 @@ const Cards = () => {
               <Text> all in one place.</Text>
             </CardBody>
             <CardFooter>
-              <Button color='#fff' bg='#FF7226'>
+              <Button color='#fff' bg='orange'>
                 Know more
               </Button>
             </CardFooter>
@@ -59,7 +59,7 @@ const Cards = () => {
               </Text>
             </CardBody>
             <CardFooter>
-              <Button color='#fff' bg='#FF7226'>
+              <Button color='#fff' bg='orange'>
                 Know more
               </Button>
             </CardFooter>

@@ -29,7 +29,7 @@ export const Personalinfo = () => {
             Personal Information
         </div>
         <div className='cibil-day'>
-            <p>Your CIBIL Score and Report is 46 days old.<span style={{color:"blue",textDecoration:"underline"}}> Check your latest CIBIL score & Report now</span></p>
+            <p>Your CIBIL Score and Report is 46 days old. <span style={{color:"#0071e9",textDecoration:"underline"}}> Check your latest CIBIL score & Report now</span></p>
         </div>
         <TableContainer className='table'>
             <Table variant='simple'>

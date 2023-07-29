@@ -2,6 +2,7 @@
     scroll-behavior: auto;
     
 }
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -12,7 +13,8 @@
 
 .logo{
     border-right: 1px solid #ccc;
-    width: 15%;
+    padding: 0 .5rem;
+    padding-right: 1rem;
     font-size: 18px;
     color: #0080f1;
     margin: auto 15px;
@@ -20,10 +22,9 @@
 }
 
 .btn{
-    width: 7%;
     text-align: center;
     align-self: center;
-    padding: 1%;
+    padding: 11px 15px;
     font-weight: 300;
     font-size: 14px;
     color: #fff;
@@ -38,11 +39,12 @@
 
 .pages{
     display: flex;
-    width: 80%;
     align-items: center;
     justify-content: space-evenly;
+    gap: 40px;
 }
 .pages p{
+    padding: 12px 0;
     font-size: 14px;
     font-weight: 500;
     color: rgb(6, 84, 87);
@@ -50,4 +52,45 @@
 
 .pages p:hover{
     cursor: pointer;
+}
+
+#root div > div.pages > a.blue > p{
+    color: #32A9ED !important;
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+    .logo{
+        font-size: 15px;
+    }
+    .pages{
+        gap: 10px;
+    }
+    .pages>a>p{
+        font-size: 13px;
+    }
+    .login-btn{
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .logo{
+        font-size: 12px;
+    }
+    .pages{
+        gap: 10px;
+    }
+    .pages>a>p{
+        font-size: 12px;
+    }
+    .login-btn{
+        font-size: 12px;
+    }
+    .pages > a:nth-child(5) > p{
+        display: none;
+    }
 }

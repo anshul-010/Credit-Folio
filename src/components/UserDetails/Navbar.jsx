@@ -32,11 +32,11 @@ const Navbar = () => {
     <Box pos='sticky'  as='nav' justifyContent='flex-end' display='flex' border='solid 1px #ccc'  m='0 0 0 0' bg='#fff' >
         <Box cursor='pointer' onClick={()=>navigate('/')} h='100%' m='auto' color='#0078e9' fontWeight='600' p='6px 18px' flexGrow='1' >CreditFolio</Box>
         <Box display={'flexbox'} borderLeft='solid 1px #ccc' borderRight='solid 1px #ccc' justifyContent={'center'} alignItems={'center'} bg='white'> <NavLink className='nav-link' to='/home'>Home</NavLink></Box>
-        <Box display={'flexbox'} borderRight='solid 1px #ccc' justifyContent={'center'} alignItems={'center'} bg='white'> <NavLink className='nav-link' to='/credit-Report'>Credit Report</NavLink></Box>
-        <Box display={'flexbox'} borderRight='solid 1px #ccc' justifyContent={'center'} alignItems={'center'} bg='white'> <NavLink className='nav-link' to='/offers'>Offers</NavLink></Box>
-        <Box display={'flexbox'} borderRight='solid 1px #ccc' justifyContent={'center'} alignItems={'center'} bg='white'> <NavLink className='nav-link' to='/alerts'>Alerts</NavLink></Box>
-        <Box display={'flexbox'} borderRight='solid 1px #ccc' justifyContent={'center'} alignItems={'center'} bg='white'> <NavLink className='nav-link' to='/score-simulator'>Score Simulator</NavLink></Box>
-        <Box display={'flexbox'} borderRight='solid 1px #ccc' justifyContent={'center'} alignItems={'center'} bg='white'> <NavLink className='nav-link' style={{paddingRight: '3rem'}} to='/credit-education'>Credit Education</NavLink></Box>
+        <Box display={'flexbox'} borderRight='solid 1px #ccc' justifyContent={'center'} alignItems={'center'} bg='white'> <NavLink className='nav-link' fontSize={['14px','14px','14px','12px']}   to='/credit-Report'>Credit Report</NavLink></Box>
+        <Box display={'flexbox'} borderRight='solid 1px #ccc' justifyContent={'center'} alignItems={'center'} bg='white'> <NavLink className='nav-link'  fontSize={['14px','14px','14px','12px']}  to='/offers'>Offers</NavLink></Box>
+        <Box display={'flexbox'} borderRight='solid 1px #ccc' justifyContent={'center'} alignItems={'center'} bg='white'> <NavLink className='nav-link'  fontSize={['14px','14px','14px','12px']}  to='/alerts'>Alerts</NavLink></Box>
+        <Box display={'flexbox'} borderRight='solid 1px #ccc' justifyContent={'center'} alignItems={'center'} bg='white'> <NavLink className='nav-link'  fontSize={['14px','14px','14px','12px']}  to='/score-simulator'>Score Simulator</NavLink></Box>
+        <Box borderRight='solid 1px #ccc' justifyContent={'center'} alignItems={'center'} bg='white'> <NavLink   className='nav-link' style={{paddingRight: '3rem'}} to='/credit-education'>Credit Education</NavLink></Box>
     </Box>
     </div>
 

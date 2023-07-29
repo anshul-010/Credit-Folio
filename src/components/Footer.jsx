@@ -15,22 +15,25 @@ export const Footer = () => {
                 <div className="text">
                     <h2>About Us</h2>
                     <hr />
+                    <p>Lorem, ipsum dolor.</p>
+                    <p>dolor sit amet.</p>
                     <p>About TransUnion CIBIL</p>
-                    <p>About TransUnion CIBIL</p>
-                    <p>About TransUnion CIBIL</p>
+                    <p>Adipisicing elit. Sapiente, delectus.</p>
                 </div>
                 <div className="text">
                     <h2>Information</h2>
                     <hr />
+                     <p>Lorem, ipsum dolor.</p>
                     <p>About TransUnion CIBIL</p>
-                    <p>About TransUnion CIBIL</p>
-                    <p>About TransUnion CIBIL</p>
+                    <p>dolor sit amet.</p>
+                    <p>Lorem, ipsum dolor.</p>
                 </div>
                 <div className="text">
                     <h2>More information</h2>
                     <hr />
-                    <p>About TransUnion CIBIL</p>
-                    <p>About TransUnion CIBIL</p>
+                    <p>Lorem, ipsum dolor.</p>
+                    <p>dolor sit amet.</p>
+                    <p>Lorem, ipsum dolor.</p>
                     <p>About TransUnion CIBIL</p>
                 </div>
             </div>
@@ -39,7 +42,7 @@ export const Footer = () => {
         <div className='right-side'>
             <div>
                 <h2>Have questions?</h2>
-                <button>CONTACT US</button>
+                <button>Contact us</button>
             </div>
             <div className='social-images'>
                 <div className="img">

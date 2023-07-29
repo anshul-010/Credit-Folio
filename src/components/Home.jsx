@@ -12,6 +12,8 @@ import { Heading } from '@chakra-ui/react'
 import { Footer } from './Footer'
 import {Topbar} from './Topbar'
 import { Link } from 'react-router-dom'
+import home_banner from '../../src/images/home-banner.svg'
+import banner from '../../src/images/banner.svg'
  
 export const Home = () => {
   return (
@@ -24,7 +26,7 @@ export const Home = () => {
                 <p>Don't worry. Checking your own credit score won't lower it.</p>
             </div>
             <div className='lapi-img' >
-                <img style={{width: '600px'}} src='./home-banner.svg' alt="not fount" />
+                <img style={{width: '600px'}} src={home_banner} alt="not fount" />
             </div>
         </div>
         <div className='text-line' >
@@ -109,7 +111,7 @@ export const Home = () => {
             </div>
         </div>
         <div className="pic">
-            <img style={{width: '620px',display: 'block', margin: 'auto'}} src='./banner.svg' alt="not found" />
+            <img style={{width: '620px',display: 'block', margin: 'auto'}} src={banner} alt="not found" />
         </div>
         <div className='bottom-text'>
             <h2 style={{marginTop: '2rem'}}>Get your CIBIL Score & Report today.</h2>

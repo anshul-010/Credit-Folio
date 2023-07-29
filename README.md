@@ -32,8 +32,8 @@
 <h2>Team Members </h2>
 <ul> 
 <li><a href="https://github.com/anshul-010">Anshul kushwah</a></li> 
-<li><a href="https://github.com/shashi310">Shashikant Yadav</a></li> 
 <li><a href="https://github.com/shivamvr">Shivam Verma</a></li> 
+<li><a href="https://github.com/shashi310">Shashikant Yadav</a></li> 
 </ul>
 
 </div>
@@ -44,27 +44,27 @@
 
 <div> <h3> Landing Page </h3> 
   
-  <img src="https://i.ibb.co/FVSXV9B/Landing-Page.png"/>
+  <img src="https://i.ibb.co/4sBGFgH/download-7.png"/>
  </div>
 
 <div> <h3>Home Page </h3> 
   
-  <img src="https://i.ibb.co/XZt7wNr/HomePage.png"/>
+  <img src="https://i.ibb.co/T2ts1s8/download-11.png"/>
   </div>
 
   
   <div> <h3> Credit Info Page </h3> 
   
-  <img src="https://i.ibb.co/zSrprGz/Account-Info.png"/>
+  <img src="https://i.ibb.co/pdvgmpK/download-9.png"/>
   </div>
   
   <div> <h3> Account Information </h3> 
   
-  <img src="https://i.ibb.co/BngrKC7/Personalinfo.png"/>
+  <img src="https://i.ibb.co/Rvz93nk/download-10.png"/>
   </div>
 
  <div> <h3> Admin Page </h3> 
   
-  <img src="https://i.ibb.co/vJm0mQV/Admin.png"/>
+  <img src="https://i.ibb.co/JvM2Qb8/download-8.png"/>
   </div>
 </div>

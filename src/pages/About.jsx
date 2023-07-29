@@ -2,6 +2,8 @@ import React from 'react'
 import cityImg from "../images/aboutUS.png"
 import "../CSS/about.css"
 import { Footer } from '../components/Footer'
+import banner from '../images/banner.svg'
+
 
 export const About = () => {
   return (
@@ -14,7 +16,7 @@ export const About = () => {
           <button>Know more</button>
         </div>
         <div className='img'>
-          <img style={{width: '600px', margin: '1rem auto'}} src='./banner.svg' alt="" />
+          <img style={{width: '600px', margin: '1rem auto'}} src={banner} alt="" />
         </div>
       </div>
       <div className="about-middle">

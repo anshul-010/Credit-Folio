@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 const CibilScore = () => {
   return (
     <div>
-      <Box p='1rem' m='2rem auto' maxW='930px' minW='300px'>
+      <Box p='1rem' m='2rem auto' w='90%'>
         <HStack borderRadius='6px' border='solid 1px #ddd' p='1.5rem' justifyContent='space-between' flexWrap='wrap'>
           <Box>
             <Text as='p' fontWeight='bold'>
@@ -32,13 +32,15 @@ const CibilScore = () => {
         borderRadius='6px'
         border='solid 1px #ddd'
         p='10px'
-        minW='500px'
-        maxW='900px'
+        w='87%'
         m='1rem auto'
+        gap='1rem'
         alignItems='flex-start'
         justifyContent='space-between'
+        flexWrap='wrap'
+        // flex-direction='column'
       >
-        <Box  borderRight={"solid 1.5px #ddd"} p={"1rem"} pr='2.4rem'>
+        <Box   borderBottom='1px solid #ccc' borderRight={"solid 1.5px #ddd"} p={"1rem"} pr='4rem'>
           <Text m='10px' as='h2' fontSize='20px'>CIBIL Score</Text>
           <CircularProgress color='#B9CD5D' m='5px' value={77.4} size='150px'>
             <CircularProgressLabel color='#B9CD5D'>774</CircularProgressLabel>
@@ -59,7 +61,7 @@ const CibilScore = () => {
           </Box>
         </Box>
 
-        <Box p='10px' w='450px' display='flex' flexDirection={"column"} gap={"20px"}>
+        <Box p='10px' w='400px' display='flex' flexDirection={"column"} margin='auto' gap={"20px"}>
           <Text as='h2'>Where You Stand</Text>
           <Text fontSize='14px' as='p'>
             See how your CIBIL Score compares with the rest of the

@@ -4,7 +4,7 @@ body{
 }
 
 *::-webkit-scrollbar {
-    width: 14px;
+    width: 13px;
   }
   *::-webkit-scrollbar-track {
     background: rgb(216, 216, 216);
@@ -13,7 +13,8 @@ body{
   }
   *::-webkit-scrollbar-thumb {
     /* background:#0bc5ea47; */
-    background: #bbb;
+    /* background: #bbb; */
+    background: #32a8eda5;
   }
 .active{
     /* background: #F6D727; */
@@ -45,5 +46,63 @@ a{
 
 .active-acc-tab{
   color: #fff !important;
-  background: #0094e9c2 !important;
+  background: #23AAF2 !important;
+}
+
+@media screen and (max-width: 800px) {
+  #root > div > div:nth-child(1) > nav > div> a{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 700px) {
+   
+#root > div > div:nth-child(1) > nav > div> a{
+  font-size: 12.5px;
+  padding: 5px 10px;
+}
+#root > div > div:nth-child(1) > nav > div.css-7lbs7f > a{
+  display: none;
+}
+
+#root .card-main-div{
+  all: initial;
+  width: 80%;
+  padding: 10px;
+  /* background-color: red ; */
+  border: solid 1px #ccc;
+  border-radius: 6px;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  font-size: 12px;
+}
+#root > div > div:nth-child(2) > div:nth-child(1) > div.chakra-stack.css-1i4i9dm > div.css-11pip87{
+  border-right: none;
+}
+.login-img,.signup-img{
+  display: none;
+}
+
+#root .admin-right.css-1hu07q0 .item{
+  margin-left: 1rem;
+  grid-template-columns: repeat(3, 200px) !important;
+  justify-content: center;
+  background: green;
+  flex-wrap: wrap !important;
+  gap: 20px 0;
+}
+
+
+#root .filters{
+  width: 400px !important;
+}
+
+#root .admin-right{
+  margin-left: 0 !important;
+  width: 100%;
+}
+
+
 }

@@ -2,12 +2,13 @@
     border: 1px solid #ccc;
     display: flex;
     border-radius: 6px;
-    background-color: rgb(251, 249, 249);
+    background-color: rgb(255, 255, 255);
     justify-content: space-between;
     width: 75%;
     margin: auto;
     padding: 1rem;
 }
+
 .card-main-div>div{
     margin: 10px;
 }
@@ -25,7 +26,7 @@
     color: rgb(51, 51, 51);
 }
 .card-main-div p{
-    font-weight: 500;
+    font-weight: 400;
     color: rgb(51, 51, 51);
 }
 .app-btn{

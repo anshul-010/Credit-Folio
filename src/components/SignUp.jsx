@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
+import signup_banner from '../images/signup-banner.svg'
+
 
 const SignUp = () => {
 const [SignUpStatus, setSignUpStatus] = useState(false);
@@ -37,7 +39,7 @@ const [SignUpStatus, setSignUpStatus] = useState(false);
   return (
     <div style={{display: 'flex', justifyContent: 'center', gap:'2rem', marginTop: '3rem', flexWrap: 'wrap'}}>
     <div>
-    <img style={{width: '350px', margin: '2rem', opacity: '0.9'}} src="./signup-banner.svg" alt="" />
+    <img className='signup-img' style={{width: '350px', margin: '3rem', opacity: '0.9'}} src={signup_banner} alt="" />
     </div>
     <DIV>
       {SignUpStatus ? <h3> SignUp Successful</h3> : <h2>SignUp Page</h2> }

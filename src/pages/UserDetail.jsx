@@ -16,7 +16,7 @@ const UserDetail = () => {
       <CreditOffer />
 
       <Cards />
-      <Text as='p' p='1rem'>
+      <Text as='p' p='1rem 3rem'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad minus, harum
         aut ipsa ipsum nihil necessitatibus nesciunt eligendi corrupti animi
         vero commodi? Inventore est adipisci vero minus sapiente quibusdam
@@ -25,7 +25,7 @@ const UserDetail = () => {
         blanditiis repudiandae vero?
       </Text>
       <br />
-      <Text as='p' p='1rem' mb='3rem'>
+      <Text as='p' p='1rem 3rem' mb='3rem'>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quo
         harum quos placeat consequatur eveniet provident recusandae architecto
         dolore dolor? Quibusdam ratione repellat dolor eos ipsa excepturi quam
@@ -36,13 +36,13 @@ const UserDetail = () => {
       </Text>
 
       <HStack mb='4rem'>
-        <Text as='p' p='1rem'>
+        <Text as='p' p='1rem 3rem'>
           Vero minus sapiente quibusdam cupiditate. Lorem ipsum, dolor sit amet
           consectetur adipisicing elit. Obcaecati facilis quisquam nihil sed
           labore voluptates sapiente fugiat blanditiis repudiandae vero?
         </Text>
 
-        <Text as='p' p='1rem'>
+        <Text as='p' p='1rem 3rem'>
           Vero minus sapiente quibusdam cupiditate. Lorem ipsum, dolor sit amet
           consectetur adipisicing elit. Obcaecati facilis quisquam nihil sed
           labore voluptates sapiente fugiat blanditiis repudiandae vero?

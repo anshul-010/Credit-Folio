@@ -33,8 +33,8 @@ const Card = (props) => {
     navigate("/admin/edit/:id");
   };
   const pStyle = {
-    fontSize: "15px",
-    paddingLeft: "2rem",
+    fontSize: "14px",
+    paddingLeft: "10px",
     color: "#333",
     lineHeight: "25px",
   };
@@ -48,7 +48,7 @@ const Card = (props) => {
     color: "#007ad6",
   };
   const divStyle = {
-    width: "300px",
+    width: "270px",
     display: "flex",
     justifyContent: "center",
     textAlign: "left",

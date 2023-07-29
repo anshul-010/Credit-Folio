@@ -50,15 +50,27 @@ const DIV = styled.div`
   gap: 20px;
   margin-bottom: 5rem;
   padding-left: 1.5rem;
-  /* justify-content: space-between; */
+  width: 100%;
+  @media screen and (max-width: 800px) {
+    padding-right: 2rem;
+    position: absolute;
+    left: 0;
+    justify-content: space-between;
+  }
   .item{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
     padding-left: 10px;
     border: 1 px solid;
-    gap: 20px ;
+    gap: 30px ;
+    margin-left: 5rem;
+    @media screen and (max-width: 800px) {
+      display: flex;
+    }
 
   }
+
   h1{
     /* margin-left:300px ; */
     font-size: 18px ;

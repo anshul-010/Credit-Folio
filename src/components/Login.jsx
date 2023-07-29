@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { login } from "../redux/AuthReducer/action";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useToast } from '@chakra-ui/react'
+import login_banner from '../images/login-banner.svg'
 const Login = () => {
   const [email, setEmail] = useState("admin@gmail.com");
   const [password, setPassword] = useState("admin");
@@ -42,7 +43,7 @@ const Login = () => {
   return (
     <div style={{display: 'flex', justifyContent: 'center', gap:'2rem', marginTop: '3rem', flexWrap: 'wrap'}}>
     <div>
-    <img style={{width: '350px', margin: '2rem', opacity: '0.9'}} src="./login-banner.svg" alt="" />
+    <img className="login-img" style={{width: '350px', margin: '2rem', opacity: '0.9'}} src={login_banner} alt="" />
     </div>
     <DIV>
       {isAuth ? <h3>Successfully Logged In</h3> : <h2>Login Page</h2>}
@@ -82,6 +83,7 @@ const DIV = styled.div`
   margin-top: 2rem;
   gap: 15px;
   border: 1px solid #ccc;
+  margin-bottom: 3rem;
   align-items: center;
   height: fit-content;
   padding:  2rem;
