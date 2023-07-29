@@ -48,6 +48,40 @@
     color: rgb(6, 84, 87);
 }
 
-.pages p:hover{
+/* .pages p:hover{
     cursor: pointer;
+    color: #0080f1;
+    text-decoration: underline #0080f1 2px;
+    
+}
+ */
+
+
+
+@media screen and (max-width: 700px){
+    .logo{
+        width: 20%;
+        font-size: 11px;
+    }
+
+    /* .navbar p{
+        display: none;
+    } */
+
+    .about-p{
+        display: none;
+    }    
+    .blog-p{
+        display: none;
+    }
+    .pages p{
+        font-size: 10px;
+    }
+
+    .btn{
+        width: 12%;
+    }
+    .login-btn{
+        font-size: 10px;
+    }
 }
