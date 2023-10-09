@@ -26,7 +26,7 @@ const Navbar = () => {
     <Box  justifyContent='flex-end' display='flex' w='fit-content' border='solid 1px #ccc'  m='10px 0 10px auto' p='5px 2rem' bg='' gap='0 10px'>
       <Link>⌛Upgrade</Link>
       <Link>📝English</Link>
-      <Link>👤 {username}</Link>
+      <Link>🙍‍♂️ {username}</Link>
       <Link to='/' onClick={handleLogout}>🔑 Logout</Link>
     </Box>
     <Box pos='sticky'  as='nav' justifyContent='flex-end' display='flex' border='solid 1px #ccc'  m='0 0 0 0' bg='#fff' >
