@@ -298,14 +298,17 @@
       width: 80%;
     }
     .slider > div.lapi-img > img{
+      /* margin-left:2px;  */
       margin-left: -2.5rem;
     }
     .text-line>p{
+      /* font-size: xx-large; */
       font-size: x-large;
     }
     .about-credits{
       display: flex;
       flex-direction: column;
+      /* width: 95%; */
       width: 90%;
     }
     .help-card{
@@ -316,6 +319,7 @@
     }
     .card{
       width: 70%;
+      /* margin: 5%; */
       margin: 2%;
     }
     .help-center>p{
