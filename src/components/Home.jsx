@@ -98,10 +98,17 @@ export const Home = () => {
         </div>
         <div className='app'>
             <div className='app-link' style={{display: 'flex'}}>
-                <p style={{padding: '3rem'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit assumenda provident vero inventore ratione non vitae placeat! Quod, commodi? Nemo, veritatis corporis! Eligendi praesentium odit architecto eaque sunt laborum fuga!</p>
-                <p style={{padding: '3rem'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit assumenda provident vero inventore ratione non vitae placeat! Quod, commodi? Nemo, veritatis corporis! Eligendi praesentium odit architecto eaque sunt laborum fuga!</p>
+                {/* <p style={{padding: '3rem'}}></p> */}
+                <img style={{
+                    width:"40%",
+                    borderRadius:"5%"
+                }} src="https://time.com/personal-finance/static/eae579cd0af2665560dfa3f49bf82ee7/57e17/Increase-credit-score.jpg" alt="er" />
+                <img style={{
+                    width:"40%",
+                    borderRadius:"5%"
+                }} src="https://www.wearenotthebanks.com/wp-content/uploads/2023/04/credit-score.jpg" alt="er" />
             </div>
-                <p style={{width: '60%', margin: 'auto'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit assumenda provident vero inventore ratione non vitae placeat! Quod, commodi? Nemo, veritatis corporis! Eligendi praesentium odit architecto eaque sunt laborum fuga!</p>
+                
         </div>
         <div className='app'>
             <div className='app-link'>
