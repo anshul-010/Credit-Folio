@@ -85,15 +85,15 @@ const Card = (props) => {
 let id = props.id
   function handleSubmit(e) {
     patchRequest(Data,id)
+    // console.log(id)
     setTimeout(()=>{
         window.location.reload()
     },800)
     toast({
       title: 'update successful',
-      // description: "We've created your account for you.",
-      // position:'top',
+      position:'top',
       status: 'success',
-      duration: 500,
+      duration: 1000,
       isClosable: true,
     })
   }
