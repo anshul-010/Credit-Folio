@@ -35,7 +35,7 @@ setSearchParams(params)
       <div className="stye">
       <Text as='h2' fontSize='13px' pl='2px'>Filter by Account Status</Text>
       <Select bg='#fff' m='5px 0' minW='100px' onChange={handleaccountStatus}>
-        <option value="">Select</option>
+        <option value="">Status</option>
         <option value="ACTIVE">ACTIVE</option>
         <option value="DORMANT">DORMANT</option>
       </Select>
