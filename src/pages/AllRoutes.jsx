@@ -14,6 +14,7 @@ import { HelpCenter } from "./HelpCenter";
 import Private from './Private'
 // import  from './'
 import Admin from "./Admin";
+import Accounts from "./Accounts";
 
 const AllRoutes = () => {
   return (
@@ -29,6 +30,7 @@ const AllRoutes = () => {
       <Route path='/education' element={<Education />} />
       <Route path='helpcenter' element={<HelpCenter />} />
       {/* ----------------------------------------------------- */}
+      <Route path='/accounts' element={<Private><Accounts /></Private> } />
       <Route path='/credit-report/' element={<Private><ReportPage /></Private> } />
       <Route path='/credit-report/:tab' element={<Private><ReportPage /> </Private>} />
       <Route path='/admin' element={<Private><Admin /></Private>} />
