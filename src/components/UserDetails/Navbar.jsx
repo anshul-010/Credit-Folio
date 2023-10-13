@@ -1,5 +1,5 @@
 
-import { Box, Button, HStack } from '@chakra-ui/react'
+import { Box, Button, Center, HStack } from '@chakra-ui/react'
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import {logout} from '../../redux/AuthReducer/action'
