@@ -356,5 +356,12 @@
       width: 40%;
     }
 
-    
+    #banner{
+      border: 2px solid;
+      height: 300px;
+    }
+    #banner-img{
+      height: 300px;
+      width: 100%;
+    }
   }

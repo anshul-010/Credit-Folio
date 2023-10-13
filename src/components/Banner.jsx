@@ -61,7 +61,7 @@ export default function Banner() {
   ]
 
   return (
-    <Box className='banner' position={'relative'} height={'500px'} width={'full'} mt={"2px"} m={"auto"} overflow={'hidden'}>
+    <Box id='banner' position={'relative'} height={'500px'} width={'full'} mt={"2px"}overflow={'hidden'}>
       {/* CSS files for react-slick */}
       <link
         rel="stylesheet"
@@ -101,7 +101,7 @@ export default function Banner() {
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {cards.map((card, index) => (
           <Box
-            className='banner'
+            id='banner-img'
             key={index}
             height={'500px'}
             position="relative"
