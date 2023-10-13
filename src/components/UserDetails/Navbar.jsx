@@ -22,22 +22,22 @@ const Navbar = () => {
    dispatch(logout())
   }
 
-  const handleClick = () => {
-    if (username === 'admin') {
+  const handleClick = (name) => {
+    if (name === 'admin') {
       // console.log("adminClick");
       navigate('/admin');
     }
   };
   return (
     <div>
-    <Box  justifyContent='flex-end' display='flex' w='fit-content' border='solid 1px #ccc'  m='10px 0 10px auto' p='5px 2rem' bg='' gap='0 10px'>
+    <Box  justifyContent='flex-end' display='flex' w='fit-content' border='solid 1px #ccc'  m='10px 0 10px auto' p='5px 2rem'  gap='0 10px' bg="lightGreen">
       <Link>⌛Upgrade</Link>
       <Link>📝English</Link>
-      <Link onClick={handleClick}>🙍‍♂️ {username}</Link>
+      <Link onClick={()=>handleClick(username)}>🙍‍♂️ {username}</Link>
       <Link to='/' onClick={handleLogout}>🔑 Logout</Link>
     </Box>
     <Box pos='sticky'  as='nav' justifyContent='flex-end' display='flex' border='solid 1px #ccc'  m='0 0 0 0' bg='#fff' >
-        <Box cursor='pointer' onClick={()=>navigate('/')} h='100%' m='auto' color='#0078e9' fontWeight='600' p='6px 18px' flexGrow='1' >CreditFolio</Box>
+        <Box className='logoName' cursor='pointer' onClick={()=>navigate('/')} h='100%' m='auto' color='#0078e9' fontWeight='600' p='6px 18px' flexGrow='1' >CREDIT-FOLIO</Box>
         <Box display={'flexbox'} borderLeft='solid 1px #ccc' borderRight='solid 1px #ccc' justifyContent={'center'} alignItems={'center'} bg='white'> <NavLink className='nav-link' to='/home'>Home</NavLink></Box>
 
         <Box display={'flexbox'} borderRight='solid 1px #ccc' justifyContent={'center'} alignItems={'center'} bg='white'> <NavLink className='nav-link' fontSize={['14px','14px','14px','12px']}   to='/accounts'>Accounts</NavLink></Box>
