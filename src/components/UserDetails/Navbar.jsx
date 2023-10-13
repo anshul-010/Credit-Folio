@@ -12,6 +12,8 @@ import {
   FiSettings,
   FiMenu,
 } from 'react-icons/fi';
+import { Image } from '@chakra-ui/react'
+import logo from '../../../src/images/App-Logo.png'
 
 const Navbar = () => { 
   const navigate = useNavigate()
@@ -23,12 +25,17 @@ const Navbar = () => {
 
   return (
     <div>
-    <Box  justifyContent='flex-end' display='flex' w='fit-content' border='solid 1px #ccc'  m='10px 0 10px auto' p='5px 2rem' bg='' gap='0 10px'>
-      <Link>⌛Upgrade</Link>
-      <Link>📝English</Link>
-      <Link>🙍‍♂️ {username}</Link>
-      <Link to='/' onClick={handleLogout}>🔑 Logout</Link>
-    </Box>
+      <div style={{display:"flex"}}>
+        {/* <Box w="200px">
+        <Image src={logo} color='red' boxSize='80px'border="2px solid" alt='Dan Abramov' w='100px' />
+        </Box>  */}
+        <Box  justifyContent='flex-end' display='flex' w='fit-content' border='solid 1px #ccc'  m='10px 0 10px auto' p='5px 2rem' bg='' gap='0 10px'>
+          <Link>⌛Upgrade</Link>
+          <Link>📝English</Link>
+          <Link>🙍‍♂️ {username}</Link>
+          <Link to='/' onClick={handleLogout}>🔑 Logout</Link>
+        </Box> 
+      </div>
     <Box pos='sticky'  as='nav' justifyContent='flex-end' display='flex' border='solid 1px #ccc'  m='0 0 0 0' bg='#fff' >
         <Box cursor='pointer' onClick={()=>navigate('/')} h='100%' m='auto' color='#0078e9' fontWeight='600' p='6px 18px' flexGrow='1' >CreditFolio</Box>
         <Box display={'flexbox'} borderLeft='solid 1px #ccc' borderRight='solid 1px #ccc' justifyContent={'center'} alignItems={'center'} bg='white'> <NavLink className='nav-link' to='/home'>Home</NavLink></Box>

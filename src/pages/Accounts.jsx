@@ -8,7 +8,7 @@ const Accounts = () => {
       textAlign: 'center',
     }}>
 
-<CreditInfo />
+    <CreditInfo />
     </div>
   )
 }
