@@ -1,5 +1,5 @@
 
-import { Box, Button, HStack } from '@chakra-ui/react'
+import { Box, Button, Center, HStack } from '@chakra-ui/react'
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import {logout} from '../../redux/AuthReducer/action'
@@ -18,26 +18,28 @@ import logo from '../../../src/images/App-Logo.png'
 const Navbar = () => { 
   const navigate = useNavigate()
   const username = useSelector(state=>state.authReducer).User.name
+  console.log(username);
   const dispatch = useDispatch()
   const handleLogout = ()=>{
    dispatch(logout())
   }
 
+  const handleClick = (name) => {
+    if (name === 'admin') {
+      // console.log("adminClick");
+      navigate('/admin');
+    }
+  };
   return (
     <div>
-      <div style={{display:"flex"}}>
-        {/* <Box w="200px">
-        <Image src={logo} color='red' boxSize='80px'border="2px solid" alt='Dan Abramov' w='100px' />
-        </Box>  */}
-        <Box  justifyContent='flex-end' display='flex' w='fit-content' border='solid 1px #ccc'  m='10px 0 10px auto' p='5px 2rem' bg='' gap='0 10px'>
-          <Link>⌛Upgrade</Link>
-          <Link>📝English</Link>
-          <Link>🙍‍♂️ {username}</Link>
-          <Link to='/' onClick={handleLogout}>🔑 Logout</Link>
-        </Box> 
-      </div>
+    <Box  justifyContent='flex-end' display='flex' w='fit-content' border='solid 1px #ccc'  m='10px 0 10px auto' p='5px 2rem'  gap='0 10px' bg="lightGreen">
+      <Link>⌛Upgrade</Link>
+      <Link>📝English</Link>
+      <Link onClick={()=>handleClick(username)}>🙍‍♂️ {username}</Link>
+      <Link to='/' onClick={handleLogout}>🔑 Logout</Link>
+    </Box>
     <Box pos='sticky'  as='nav' justifyContent='flex-end' display='flex' border='solid 1px #ccc'  m='0 0 0 0' bg='#fff' >
-        <Box cursor='pointer' onClick={()=>navigate('/')} h='100%' m='auto' color='#0078e9' fontWeight='600' p='6px 18px' flexGrow='1' >CreditFolio</Box>
+        <Box className='logoName' cursor='pointer' onClick={()=>navigate('/')} h='100%' m='auto' color='#0078e9' fontWeight='600' p='6px 18px' flexGrow='1' >CREDIT-FOLIO</Box>
         <Box display={'flexbox'} borderLeft='solid 1px #ccc' borderRight='solid 1px #ccc' justifyContent={'center'} alignItems={'center'} bg='white'> <NavLink className='nav-link' to='/home'>Home</NavLink></Box>
 
         <Box display={'flexbox'} borderRight='solid 1px #ccc' justifyContent={'center'} alignItems={'center'} bg='white'> <NavLink className='nav-link' fontSize={['14px','14px','14px','12px']}   to='/accounts'>Accounts</NavLink></Box>
