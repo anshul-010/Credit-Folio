@@ -54,7 +54,7 @@ export default function ReportPage({ children }) {
         autoFocus={false}
         isOpen={isOpen}
         placement="left"
-        // onClose={onClose}
+        onClose={onClose}
         returnFocusOnClose={false}
         onOverlayClick={onClose}
         size="full">
@@ -84,30 +84,55 @@ export default function ReportPage({ children }) {
 
 
 
+// const SidebarContent = ({ onClose, ...rest }) => {
+//   return (
+//     <>
+//       <HStack  w='100%' p='0px' >
+//         <Text p='10px 0' textAlign='center' w='232px' as='h2'>Credit Report </Text>
+//         <Text  minw='300px' flex={2} bg='#fff' p='10px 4.8rem' fontSize='22px' as='h2'>Your CIBIL Score is 774</Text>
+//       </HStack>
+//     <Box
+//       bg={useColorModeValue('white', 'gray.900')}
+//       borderRight="1px"
+//       borderRightColor={useColorModeValue('gray.200', 'gray.700')}
+//       width='240px'
+//       position="absolute"
+//       h="full"
+//       {...rest}>
+//       {LinkItems.map((link) => (
+//         <NavItem key={link.name} icon={link.icon}>
+//           {link.name}
+//         </NavItem>
+//       ))}
+//     </Box>
+//     </>
+//   );
+// };
+
 const SidebarContent = ({ onClose, ...rest }) => {
   return (
-    <>
-      <HStack  w='100%' p='0px' >
-        <Text p='10px 0' textAlign='center' w='232px' as='h2'>Credit Report </Text>
-        <Text  minw='300px' flex={2} bg='#fff' p='10px 4.8rem' fontSize='22px' as='h2'>Your CIBIL Score is 774</Text>
-      </HStack>
     <Box
       bg={useColorModeValue('white', 'gray.900')}
       borderRight="1px"
       borderRightColor={useColorModeValue('gray.200', 'gray.700')}
-      width='240px'
-      position="absolute"
+      w={{ base: 'full', md: 60 }}
+      pos="fixed"
       h="full"
       {...rest}>
+      <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
+        <Text fontSize="2xl" fontFamily="monospace" fontWeight="bold">
+          Credit Folio
+        </Text>
+        <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
+      </Flex>
       {LinkItems.map((link) => (
         <NavItem key={link.name} icon={link.icon}>
           {link.name}
         </NavItem>
       ))}
     </Box>
-    </>
-  );
-};
+  )
+}
 
 
 const NavItem = ({ icon, children, ...rest }) => {

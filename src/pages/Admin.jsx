@@ -97,61 +97,29 @@ export default function Admin({ children }) {
 }
 
 const SidebarContent = ({ onClose, ...rest }) => {
-  const navigate = useNavigate();
-  const dispatch = useDispatch();
-  const logoutHandler = () => {
-    dispatch(logout());
-    navigate("/login", { replace: true });
-  };
   return (
-    <>
-      <HStack w='100%'>
-        <Text
-          p='10px'
-          textAlign='center'
-          fontSize='20px'
-          color='#333'
-          width='284px'
-          as='h2'
-        >
+    <Box
+      bg={useColorModeValue('white', 'gray.900')}
+      borderRight="1px"
+      borderRightColor={useColorModeValue('gray.200', 'gray.700')}
+      w={{ base: 'full', md: 60 }}
+      pos="fixed"
+      h="full"
+      {...rest}>
+      <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
+        <Text fontSize="2xl" fontFamily="monospace" fontWeight="bold">
           Admin
         </Text>
-        <Text
-          w='100%'
-          textAlign='right'
-          minw='300px'
-          bg='#fff'
-          p='10px'
-          pl='3rem'
-          pr='1rem'
-          fontSize='25px'
-          as='h2'
-        >
-          {" "}
-          <Button onClick={logoutHandler} color='#fff' bg='#23AAF2'>
-            {" "}
-            Log out
-          </Button>
-        </Text>
-      </HStack>
-      <Box
-        bg={useColorModeValue("white", "gray.900")}
-        borderRight='1px'
-        borderRightColor={useColorModeValue("gray.200", "gray.700")}
-        w={{ base: "full", md: 60 }}
-        position='absolute'
-        h='full'
-        {...rest}
-      >
-        {LinkItems.map((link) => (
-          <NavItem key={link.name} icon={link.icon}>
-            {link.name}
-          </NavItem>
-        ))}
-      </Box>
-    </>
-  );
-};
+        <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
+      </Flex>
+      {LinkItems.map((link) => (
+        <NavItem key={link.name} icon={link.icon}>
+          {link.name}
+        </NavItem>
+      ))}
+    </Box>
+  )
+}
 
 const NavItem = ({ icon, children, ...rest }) => {
   const { tab } = useParams();
