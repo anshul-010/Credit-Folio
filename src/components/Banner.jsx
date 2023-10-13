@@ -1,5 +1,3 @@
-'use client'
-
 import React, { useState } from 'react'
 import {
   Box,
@@ -10,7 +8,7 @@ import {
   Text,
   Container,
 } from '@chakra-ui/react'
-// Here we have used react-icons package for the icons
+import "../CSS/home.css"
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi'
 // And react-slick as our Carousel Lib
 import Slider from 'react-slick'
@@ -63,7 +61,7 @@ export default function Banner() {
   ]
 
   return (
-    <Box position={'relative'} height={'500px'} width={'99vw'} mt={"2px"} m={"auto"} overflow={'hidden'}>
+    <Box className='banner' position={'relative'} height={'500px'} width={'full'} mt={"2px"} m={"auto"} overflow={'hidden'}>
       {/* CSS files for react-slick */}
       <link
         rel="stylesheet"
@@ -103,8 +101,9 @@ export default function Banner() {
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {cards.map((card, index) => (
           <Box
+            className='banner'
             key={index}
-            height={'sm'}
+            height={'500px'}
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
