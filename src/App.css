@@ -1,4 +1,5 @@
 
+
 body{
     height: 84vh !important;
 }
@@ -42,7 +43,16 @@ a{
     justify-content: center;
     height: 100%;
     padding: 8px 10px;
+    font-size: 18px;
+
+    background-color: #4ab3eb;
+
 }
+.logoName{
+background-color:honeydew;
+font-size: 23px;
+}
+
 
 .active-acc-tab{
   color: #fff !important;
