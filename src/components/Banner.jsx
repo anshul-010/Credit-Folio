@@ -75,6 +75,7 @@ export default function Banner() {
       />
       {/* Left Icon */}
       <IconButton
+        className='arrow-btn'
         aria-label="left-arrow"
         variant="ghost"
         position="absolute"
@@ -87,6 +88,7 @@ export default function Banner() {
       </IconButton>
       {/* Right Icon */}
       <IconButton
+        className='arrow-btn'
         aria-label="right-arrow"
         variant="ghost"
         position="absolute"

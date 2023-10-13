@@ -357,11 +357,14 @@
     }
 
     #banner{
-      border: 2px solid;
+      /* border: 2px solid; */
       height: 300px;
     }
     #banner-img{
-      height: 300px;
+      height: 250px;
       width: 100%;
+    }
+    .arrow-btn{
+      visibility: hidden;
     }
   }
