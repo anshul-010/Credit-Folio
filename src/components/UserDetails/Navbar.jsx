@@ -12,6 +12,8 @@ import {
   FiSettings,
   FiMenu,
 } from 'react-icons/fi';
+import { Image } from '@chakra-ui/react'
+import logo from '../../../src/images/App-Logo.png'
 
 const Navbar = () => { 
   const navigate = useNavigate()

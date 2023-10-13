@@ -14,10 +14,12 @@ import {Topbar} from './Topbar'
 import { Link } from 'react-router-dom'
 import home_banner from '../../src/images/home-banner.svg'
 import banner from '../../src/images/banner.svg'
+import Banner from './Banner'
  
 export const Home = () => {
   return (
     <div>
+        <Banner/>
         <div className='slider'>
             <div className='slider-content' >
                 <h1>Banks Check Your CIBIL Score Before Approving Your Loan*</h1>
@@ -26,7 +28,7 @@ export const Home = () => {
                 <p>Don't worry. Checking your own credit score won't lower it.</p>
             </div>
             <div className='lapi-img' >
-                <img style={{width: '600px'}} src={home_banner} alt="not fount" />
+                <img style={{width: '600px'}} src={home_banner} alt="not found" />
             </div>
         </div>
         <div className='text-line' >

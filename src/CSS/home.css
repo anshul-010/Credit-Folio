@@ -2,7 +2,8 @@
 .slider{
     display: flex;
     background-color: rgb(255, 255, 255);
-    margin-top: 5rem;
+    margin-top: 0;
+    /* border: 1px solid; */
     padding-left: 3rem;
   }
   .slider-content{
