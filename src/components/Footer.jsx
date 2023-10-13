@@ -15,25 +15,25 @@ export const Footer = () => {
                 <div className="text">
                     <h2>About Us</h2>
                     <hr />
-                    <p>Lorem, ipsum dolor.</p>
-                    <p>dolor sit amet.</p>
+                    <p>Contact</p>
+                    <p>Oprations</p>
                     <p>About TransUnion CIBIL</p>
-                    <p>Adipisicing elit. Sapiente, delectus.</p>
+                    <p>Adipisicing elit. Sapiente</p>
                 </div>
                 <div className="text">
                     <h2>Information</h2>
                     <hr />
-                     <p>Lorem, ipsum dolor.</p>
+                     <p>Loan Queries</p>
                     <p>About TransUnion CIBIL</p>
-                    <p>dolor sit amet.</p>
-                    <p>Lorem, ipsum dolor.</p>
+                    <p>Credit History Model</p>
+                    <p>Specified Operations</p>
                 </div>
                 <div className="text">
                     <h2>More information</h2>
                     <hr />
-                    <p>Lorem, ipsum dolor.</p>
-                    <p>dolor sit amet.</p>
-                    <p>Lorem, ipsum dolor.</p>
+                    <p>Loan DepartMent</p>
+                    <p>Ask the Experts</p>
+                    <p>Paid Subscription</p>
                     <p>About TransUnion CIBIL</p>
                 </div>
             </div>
