@@ -97,6 +97,12 @@ export default function Admin({ children }) {
 }
 
 const SidebarContent = ({ onClose, ...rest }) => {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const logoutHandler = () => {
+    dispatch(logout());
+    navigate("/login", { replace: true });
+  };
   return (
     <Box
       bg={useColorModeValue('white', 'gray.900')}
@@ -112,6 +118,9 @@ const SidebarContent = ({ onClose, ...rest }) => {
         </Text>
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
       </Flex>
+        <Button onClick={logoutHandler} mb={"5px"} color='#fff' bg='#23AAF2'>
+            Log out
+          </Button>
       {LinkItems.map((link) => (
         <NavItem key={link.name} icon={link.icon}>
           {link.name}
@@ -126,10 +135,11 @@ const NavItem = ({ icon, children, ...rest }) => {
   let activeTab = children.split(" ").join("-");
   let path = "/admin/" + activeTab;
   return (
+    
     <Link
-      to={path}
-      style={{ textDecoration: "none", margin: "0", fontSize: "13px" }}
-      _focus={{ boxShadow: "none" }}
+    to={path}
+    style={{ textDecoration: "none", margin: "0", fontSize: "13px" }}
+    _focus={{ boxShadow: "none" }}
     >
       <Flex
         align='center'
@@ -143,7 +153,7 @@ const NavItem = ({ icon, children, ...rest }) => {
         bg={tab === activeTab ? "#23AAF2" : "#fff"}
         color={tab === activeTab ? "#fff" : "#333"}
         {...rest}
-      >
+        >
         {icon && <Icon mr='4' fontSize='16' as={icon} />}
         {children}
       </Flex>

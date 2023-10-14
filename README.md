@@ -2,7 +2,7 @@
 
 <h4> To run Credit Folio website clone click below link</h4>
 
-<ul> <li><a href="https://6523d58c83e18d6b78fad499--roaring-axolotl-876ede.netlify.app/"> click here </a></li> </ul>
+<ul> <li><a href="https://benevolent-bienenstitch-ab1a05.netlify.app/"> click here </a></li> </ul>
 
 
 <div> <p>The CREDIT-FOLIO React App is a modern web application designed to manage credit scores and related data. This application is developed by a team of three talented developers: Anshul Kushwah,Shashikant Yadav, and Shivam Verma</p>
