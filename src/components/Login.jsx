@@ -3,12 +3,14 @@ import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
 import { login } from "../redux/AuthReducer/action";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useToast } from '@chakra-ui/react'
-import login_banner from '../images/login-banner.svg'
+import { useToast } from "@chakra-ui/react";
+import login_banner from "../images/login-banner.svg";
+import { Spinner } from "@chakra-ui/react";
 const Login = () => {
   const [email, setEmail] = useState("admin@gmail.com");
   const [password, setPassword] = useState("admin");
-  const toast = useToast()
+  const [spinner, setSpinner] = useState(false);
+  const toast = useToast();
   const dispatch = useDispatch();
   const isAuth = useSelector((store) => {
     return store.authReducer.isAuth;
@@ -23,52 +25,75 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    dispatch(login(email, password)).then(() => {
-      if(email == 'admin@gmail.com'){
-        navigate('/admin', { replace: true });
-        return
-      }
-      navigate('/home', { replace: true });
-    });
-    toast({
-      title: 'login successful',
-      // description: "We've created your account for you.",
-      position:'top',
-      status: 'success',
-      duration: 500,
-      isClosable: true,
-    })
+    setSpinner(true)
+    dispatch(login(email, password))
+      .then(() => {
+        if (email == "admin@gmail.com") {
+          navigate("/admin", { replace: true });
+          return;
+        }
+        navigate("/home", { replace: true });
+      })
+      .then(() => {
+        setSpinner(false);
+        toast({
+          title: "login successful",
+          position: "top",
+          status: "success",
+          duration: 1000,
+          isClosable: true,
+        });
+      });
   };
 
   return (
-    <div style={{display: 'flex', justifyContent: 'center', gap:'2rem', marginTop: '3rem', flexWrap: 'wrap'}}>
-    <div>
-    <img className="login-img" style={{width: '350px', margin: '2rem', opacity: '0.9'}} src={login_banner} alt="" />
-    </div>
-    <DIV>
-      {isAuth ? <h3>Successfully Logged In</h3> : <h2>Login Page</h2>}
-
-      {isAuth &&  <h3> User: {user.name}</h3>}
-      <input
-        type='email'
-        placeholder='Email'
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        type='password'
-        placeholder='Password'
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <button onClick={handleLogin}>Login</button>
-      <Link to='/sign-up'>
-        <p>
-          Don't have any account{" "}
-          <span style={{ color: "#24ADF3" }}>create new</span>
-        </p>
-      </Link>
-    </DIV>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        gap: "2rem",
+        marginTop: "3rem",
+        flexWrap: "wrap",
+      }}
+    >
+      <div>
+        <img
+          className="login-img"
+          style={{ width: "350px", margin: "2rem", opacity: "0.9" }}
+          src={login_banner}
+          alt=""
+        />
+      </div>
+      <DIV>
+        {isAuth ? <h3>Successfully Logged In</h3> : <h2>Login Page</h2>}
+        {spinner && (
+          <Spinner
+            thickness="4px"
+            speed="0.65s"
+            emptyColor="gray.200"
+            color="blue.500"
+            size="xl"
+          />
+        )}
+        {isAuth && <h3> User: {user.name}</h3>}
+        <input
+          type="email"
+          placeholder="Email"
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <button onClick={handleLogin}>Login</button>
+        <Link to="/sign-up">
+          <p>
+            Don't have any account{" "}
+            <span style={{ color: "#24ADF3" }}>create new</span>
+          </p>
+        </Link>
+      </DIV>
     </div>
   );
 };
@@ -86,7 +111,7 @@ const DIV = styled.div`
   margin-bottom: 3rem;
   align-items: center;
   height: fit-content;
-  padding:  2rem;
+  padding: 2rem;
 
   input {
     width: 80%;
@@ -101,7 +126,7 @@ const DIV = styled.div`
     width: 120px;
     padding: 7px;
     font-size: medium;
-    background-color: #32A9ED;
+    background-color: #32a9ed;
     color: #fff;
     border-radius: 6px;
     font-weight: 300;
