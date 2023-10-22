@@ -46,23 +46,23 @@ const [SignUpStatus, setSignUpStatus] = useState(false);
       <form onSubmit={handleSubmit}>
         <div className='boxx'>
           {/* <label>Name:</label> */}
-          <input type="text" name="name" placeholder='name' value={formData.name} onChange={handleChange} required />
+          <input type="text" name="name" placeholder='name'  onChange={handleChange} required />
         </div>
         <div>
           {/* <label>PAN-Card:</label> */}
-          <input maxLength='10' type="text" name="PAN" placeholder='PAN' value={formData.PAN} onChange={handleChange} required />
+          <input maxLength='10' type="text" name="PAN" placeholder='PAN'  onChange={handleChange} required />
         </div>
         <div>
           {/* <label>Email:</label> */}
-          <input type="email" name="email" placeholder='Email' value={formData.email} onChange={handleChange} required />
+          <input type="email" name="email" placeholder='Email'  onChange={handleChange} required />
         </div>
         <div>
           {/* <label>mobile:</label> */}
-          <input maxLength='10'  type="number" name="mobile" placeholder='mobile' value={formData.mobile} onChange={handleChange} required />
+          <input maxLength='10'  type="number" name="mobile" placeholder='mobile'  onChange={handleChange} required />
         </div>
         <div>
           {/* <label>Password:</label> */}
-          <input type="password" name="password" placeholder='Password' value={formData.password} onChange={handleChange} required />
+          <input type="password" name="password" placeholder='Password'  onChange={handleChange} required />
         </div>
         <button type="submit">Submit</button>
       </form>
