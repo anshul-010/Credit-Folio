@@ -5,7 +5,7 @@
 <ul> <li><a href="https://jocular-bavarois-89af42.netlify.app/"> click here </a></li> </ul>
 
 
-<div> <p>The CREDIT-FOLIO React App is a modern web application designed to manage credit scores and related data. This application is developed by a team of three talented developers: Shivam Verma Anshul Kushwah, and Shashikant Yadav</p>
+<div> <p>The CREDIT-FOLIO React App is a modern web application designed to manage credit scores and related data. This application is developed by a team of three talented developers: Shivam Verma, Anshul Kushwah, and Shashikant Yadav</p>
 <br />
 <h2>Features</h2>
 
