@@ -32,9 +32,9 @@
 
 
 <h2>Team Members </h2>
-<ul> 
-<li><a href="https://github.com/anshul-010">Anshul kushwah</a></li> 
+<ul>
 <li><a href="https://github.com/shivamvr">Shivam Verma</a></li> 
+<li><a href="https://github.com/anshul-010">Anshul kushwah</a></li> 
 <li><a href="https://github.com/shashi310">Shashikant Yadav</a></li> 
 </ul>
 
